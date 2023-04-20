@@ -18,19 +18,55 @@
 
 <body>
   <div class="wrapper">
-    <header>
-      <div class="container"></div>
+    <!-- Хедер -->
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <a class="header__logo logo logo--header" href="#">
+            <img width="122" height="44" src="img/SUPERGYM.svg" alt="Логотип Фитнес центра SUPERGYM">
+          </a>
+          <nav class="main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="tel:88005555555">8-800-555-55-55</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
     <main>
-      <section class="intro">
+      <!-- Главный экран -->
+      <section class="hero">
+        <div class="hero__background"></div>
         <div class="container">
-          <h1>Тестовая страница.</h1>
-          <p>На данной странице показан пример модальных окон.</p>
-          <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.
-          </p>
-          <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-          <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+          <div class="hero__wrapper">
+            <div class="hero__content-wrapper">
+              <h1 class="hero__title">ФИТНЕС ЦЕНТР</h1>
+              <p class="hero__subtitle">омск</p>
+              <p class="hero__discription">Тренажёрный зал
+                Групповые занятия
+                Кардио-зона </p>
+                <button class="hero__button button">Купить абонемент</button>
+            </div>
+            <picture>
+              <source media="(min-width: 1023px)"
+                srcset="img/content/desktop/trainer-desktop.webp 1x, img/content/desktop/trainer-desktop@2x.webp 2x">
+              <source media="(min-width: 767px)"
+                srcset="img/content/tablet/trainer-tablet.webp 1x, img/content/tablet/trainer-tablet@2x.webp 2x">
+              <source media="(max-width: 767px)"
+                srcset="img/content/mobil/trainer-mobil.jpg 1x, img/content/mobil/trainer-mobil@2x.jpg 2x">
+              <source media="(max-width: 1023px)"
+                srcset="img/content/tablet/trainer-tablet.jpg 1x, img/content/tablet/trainer-tablet@2x.jpg 2x">
+              <img src="img/content/desktop/trainer-desktop.png" width="500" height="556"
+                srcset="img/content/desktop/trainer-desktop@2.png 2x" alt="Тренер тренажерного зала SUPERGYM">
+            </picture>
+          </div>
         </div>
+      </section>
+      <!-- Раздел тренажерный зал -->
+      <section class="gym">
+
       </section>
     </main>
     <footer>

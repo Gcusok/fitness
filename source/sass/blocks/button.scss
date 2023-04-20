@@ -1,0 +1,14 @@
+.button {
+  border: none;
+  user-select: none;
+
+  font-family: $ff-roboto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  align-items: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  cursor: pointer;
+}
