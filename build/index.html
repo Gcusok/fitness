@@ -34,8 +34,6 @@
           </nav>
         </div>
       </div>
-    </header>
-    <main>
       <!-- Главный экран -->
       <section class="hero">
         <div class="hero__background"></div>
@@ -47,26 +45,247 @@
               <p class="hero__discription">Тренажёрный зал
                 Групповые занятия
                 Кардио-зона </p>
-                <button class="hero__button button">Купить абонемент</button>
+              <button class="hero__button button">Купить абонемент</button>
             </div>
             <picture>
               <source media="(min-width: 1023px)"
                 srcset="img/content/desktop/trainer-desktop.webp 1x, img/content/desktop/trainer-desktop@2x.webp 2x">
               <source media="(min-width: 767px)"
                 srcset="img/content/tablet/trainer-tablet.webp 1x, img/content/tablet/trainer-tablet@2x.webp 2x">
-              <source media="(max-width: 767px)"
-                srcset="img/content/mobil/trainer-mobil.jpg 1x, img/content/mobil/trainer-mobil@2x.jpg 2x">
               <source media="(max-width: 1023px)"
                 srcset="img/content/tablet/trainer-tablet.jpg 1x, img/content/tablet/trainer-tablet@2x.jpg 2x">
-              <img src="img/content/desktop/trainer-desktop.png" width="500" height="556"
-                srcset="img/content/desktop/trainer-desktop@2.png 2x" alt="Тренер тренажерного зала SUPERGYM">
+              <img src="img/content/desktop/trainer-desktop.jpg" width="500" height="556"
+                srcset="img/content/desktop/trainer-desktop@2.jpg 2x" alt="Тренер тренажерного зала SUPERGYM">
             </picture>
           </div>
         </div>
       </section>
+    </header>
+    <main>
       <!-- Раздел тренажерный зал -->
       <section class="gym">
+        <div class="container">
+          <div class="gym__wrapper">
+            <!-- Тренажерный зал - контент -->
+            <div class="gym__content">
+              <h2 class="gym__title">Тренажерный зал</h2>
+              <p class="gym__subtitle">Просторный зал площадью 900 кв/м</p>
+              <p class="gym__text">Supergym – самый большой фитнес центр за Уралом и идеальное место для&nbsp;укрепления
+                тела
+                и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+              <p class="gym__text gym__text--desktop-only">
+                В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре
+                есть несколько оборудованных залов для различных видов групповых занятий.
+              </p>
+              <svg class="gym__icon" aria-hidden="true" aria-label="Воспроизвести видео" width="72" height="72"
+                xmlns="http://www.w3.org/2000/svg">
+                <use href="img/sprite.svg#video-button"></use>
+              </svg>
+            </div>
+            <!-- Тренажерный зал - медиа контент -->
+            <div class="gym__media">
+              <div class="gym__imge-wrapper">
+                <picture>
+                  <source media="(min-width: 1023px)"
+                    srcset="img/content/desktop/gym-desktop.webp 1x, img/content/desktop/gym-desktop@2x.webp 2x">
+                  <source media="(min-width: 767px)"
+                    srcset="img/content/tablet/gym-tablet.webp 1x, img/content/tablet/gym-tablet@2x.webp 2x">
+                  <source media="(max-width: 767px)"
+                    srcset="img/content/mobil/gym-mobil.jpg 1x, img/content/mobil/gym-mobil@2x.jpg 2x">
+                  <source media="(max-width: 1023px)"
+                    srcset="img/content/tablet/gym-tablet.jpg 1x, img/content/tablet/gym-tablet@2x.jpg 2x">
+                  <img src="img/content/desktop/gym-desktop.jpg" width="660" height="401"
+                    srcset="img/content/desktop/gym-desktop@2.jpg 2x" alt="Просторный тренажерный зал">
+                </picture>
+              </div>
+              <a class="gym__video gym__video--link" href="https://www.youtube.com/watch?v=9TZXsZItgdw"
+                data-media="link">
+                <picture>
+                  <source media="(min-width: 1023px)"
+                    srcset="img/content/desktop/gym-video-desktop.webp 1x, img/content/desktop/gym-video-desktop@2x.webp 2x">
+                  <source media="(min-width: 767px)"
+                    srcset="img/content/tablet/gym-video-tablet.webp 1x, img/content/tablet/gym-video-tablet@2x.webp 2x">
+                  <source media="(max-width: 767px)"
+                    srcset="img/content/mobil/gym-video-mobil.jpg 1x, img/content/mobil/gym-video-mobil@2x.jpg 2x">
+                  <source media="(max-width: 1023px)"
+                    srcset="img/content/tablet/gym-video-tablet.jpg 1x, img/content/tablet/gym-video-tablet@2x.jpg 2x">
+                  <img src="img/content/desktop/gym-video-desktop.jpg" data-media="img" width="364" height="228"
+                    srcset="img/content/desktop/gym-video-desktop@2.jpg 2x" alt="Привью видео">
+                </picture>
+                <button class="gym__video-button gym__video-button--enabled" aria-label="Воспроизвести видео"
+                  data-media="button" type="button">
+                  <svg class="gym__icon" xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="none">
+                    <circle cx="50" cy="50" r="49" stroke="url(#a)" stroke-opacity=".2" stroke-width="2" />
+                    <circle cx="50" cy="50" r="36" fill="url(#b)" />
+                    <path fill="#fff" d="m59 49.5-12.75 7.361V42.14L59 49.5Z" />
+                    <defs>
+                      <linearGradient id="a" x1="19.774" x2="105.785" y1="0" y2="10.644" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#ED0233" />
+                        <stop offset="1" stop-color="#003EB7" />
+                      </linearGradient>
+                      <linearGradient id="b" x1="14" x2="54.186" y1="49.52" y2="9.184" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#003D85" />
+                        <stop offset=".885" stop-color="#B80027" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </button>
 
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Раздел Абонементы -->
+      <section class="subscriptions">
+        <div class="container">
+          <div class="subscriptions__wrapper">
+            <h2 class="subscriptions__title">Абонементы</h2>
+            <div class="subscriptions__tabs tabs" data-tabs="parent" data-delay="300" data-height="max">
+              <ul class="tabs__controls" data-tabs="controls">
+                <li class="tabs__control-item">
+                  <button class="tabs__control button" type="button" data-tabs="control" data-index="0">1 месяц</button>
+                </li>
+                <li class="tabs__control-item">
+                  <button class="tabs__control button" type="button" data-tabs="control" data-index="1">6
+                    месяцев</button>
+                </li>
+                <li class="tabs__control-item">
+                  <button class="tabs__control button" type="button" data-tabs="control" data-index="2">12
+                    месяцев</button>
+                </li>
+              </ul>
+              <ul class="tabs__content" data-tabs="content">
+                <!-- Абонемент на 1 месяц -->
+                <li class="tabs__element" data-tabs="element">
+                  <ul class="tabs__subitem">
+                    <li class="tabs__item">
+                      <div class="tabs__content-wrapper">
+                        <p class="tabs__title">С тренером</p>
+                        <p class="tabs__subtitle">12 занятий</p>
+                        <div class="tabs__price-wrapper">
+                          <p class="tabs__price" data-price="5000">5000</p>
+                          <span class="tabs__simbol">&#8381;</span>
+                        </div>
+                        <a class="tabs__link button" href="#">купить абонемент</a>
+                      </div>
+                    </li>
+                    <li class="tabs__item">
+                      <div class="tabs__content-wrapper">
+                        <p class="tabs__title">Дневной</p>
+                        <p class="tabs__subtitle">с 8:00 до 17:00</p>
+                        <div class="tabs__price-wrapper">
+                          <p class="tabs__price" data-price="1700">1700</p>
+                          <span class="tabs__simbol">&#8381;</span>
+                        </div>
+                        <a class="tabs__link button" href="#">купить абонемент</a>
+                      </div>
+                    </li>
+                    <li class="tabs__item">
+                      <div class="tabs__content-wrapper">
+                        <p class="tabs__title">Полный день</p>
+                        <p class="tabs__subtitle">с 8:00 до 22:00</p>
+                        <div class="tabs__price-wrapper">
+                          <p class="tabs__price" data-price="2700">2700</p>
+                          <span class="tabs__simbol">&#8381;</span>
+                        </div>
+                        <a class="tabs__link button" href="#">купить абонемент</a>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Абонемент на 6 месяцев -->
+                <li class="tabs__element" data-tabs="element">
+                  <ul class="tabs__subitem">
+                    <li class="tabs__item">
+                      <div class="tabs__content-wrapper">
+                        <p class="tabs__title">С тренером</p>
+                        <p class="tabs__subtitle">12 занятий</p>
+                        <div class="tabs__price-wrapper">
+                          <p class="tabs__price" data-price="35000">35000</p>
+                          <span class="tabs__simbol">&#8381;</span>
+                        </div>
+                        <a class="tabs__link button" href="#">купить абонемент</a>
+                      </div>
+                    </li>
+                    <li class="tabs__item">
+                      <div class="tabs__content-wrapper">
+                        <p class="tabs__title">Дневной</p>
+                        <p class="tabs__subtitle">с 8:00 до 17:00</p>
+                        <div class="tabs__price-wrapper">
+                          <p class="tabs__price" data-price="3100">3100</p>
+                          <span class="tabs__simbol">&#8381;</span>
+                        </div>
+                        <a class="tabs__link button" href="#">купить абонемент</a>
+                      </div>
+                    </li>
+                    <li class="tabs__item">
+                      <div class="tabs__content-wrapper">
+                        <p class="tabs__title">Полный день</p>
+                        <p class="tabs__subtitle">с 8:00 до 22:00</p>
+                        <div class="tabs__price-wrapper">
+                          <p class="tabs__price" data-price="3700">3700</p>
+                          <span class="tabs__simbol">&#8381;</span>
+                        </div>
+                        <a class="tabs__link button" href="#">купить абонемент</a>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Абонемент на 12 месяцев -->
+                <li class="tabs__element" data-tabs="element">
+                  <ul class="tabs__subitem">
+                    <li class="tabs__item">
+                      <div class="tabs__content-wrapper">
+                        <p class="tabs__title">С тренером</p>
+                        <p class="tabs__subtitle">12 занятий</p>
+                        <div class="tabs__price-wrapper">
+                          <p class="tabs__price" data-price="150000">150000</p>
+                          <span class="tabs__simbol">&#8381;</span>
+                        </div>
+                        <a class="tabs__link button" href="#">купить абонемент</a>
+                      </div>
+                    </li>
+                    <li class="tabs__item">
+                      <div class="tabs__content-wrapper">
+                        <p class="tabs__title">Дневной</p>
+                        <p class="tabs__subtitle">с 8:00 до 17:00</p>
+                        <div class="tabs__price-wrapper">
+                          <p class="tabs__price" data-price="31000">31000</p>
+                          <span class="tabs__simbol">&#8381;</span>
+                        </div>
+                        <a class="tabs__link button" href="#">купить абонемент</a>
+                      </div>
+                    </li>
+                    <li class="tabs__item">
+                      <div class="tabs__content-wrapper">
+                        <p class="tabs__title">Полный день</p>
+                        <p class="tabs__subtitle">с 8:00 до 22:00</p>
+                        <div class="tabs__price-wrapper">
+                          <p class="tabs__price" data-price="50000">50000</p>
+                          <span class="tabs__simbol">&#8381;</span>
+                        </div>
+                        <a class="tabs__link button" href="#">купить абонемент</a>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="subscriptions__background-wrapper">
+              <picture>
+                <source media="(min-width: 1023px)"
+                  srcset="img/background/desktop/discs-desktop.webp 1x, img/background/desktop/discs-desktop@2x.webp 2x">
+                <source media="(min-width: 767px)"
+                  srcset="img/background/tablet/discs-tablet.webp 1x, img/background/tablet/discs-tablet@2x.webp 2x">
+                <source media="(max-width: 1023px)"
+                  srcset="img/background/tablet/discs-tablet.png 1x, img/background/tablet/discs-tablet@2x.png 2x">
+                <img src="img/background/desktop/discs-desktop.png" width="321" height="384"
+                  srcset="img/background/desktop/discs-desktop@2.png 2x" alt="Спортивные снаряды">
+              </picture>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <footer>

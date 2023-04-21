@@ -1,0 +1,285 @@
+.tabs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tabs__controls {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  padding-bottom: 20px;
+  min-width: 341px;
+
+  display: flex;
+  justify-content: center;
+
+  list-style: none;
+
+  border-bottom: solid $color-tabs-border;
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+  }
+
+  @include vp-1023 {
+    min-width: 332px;
+
+    justify-content: space-between;
+  }
+
+  @include vp-767 {
+    min-width: 290px;
+  }
+}
+
+.tabs__control {
+  margin: 0;
+  min-width: auto;
+  justify-content: center;
+
+  position: relative;
+
+  background-color: transparent;
+
+  color: $color-manatee;
+
+  font-size: 20px;
+  line-height: 30px;
+
+  cursor: pointer;
+
+  @include vp-1023 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &.is-active {
+    color: inherit;
+    pointer-events: none;
+
+    &::after {
+      height: 2px;
+      width: 100%;
+
+      content: "";
+      display: block;
+      position: absolute;
+
+      bottom: -22px;
+      left: -1px;
+
+      background-color: $color-crimson;
+    }
+  }
+}
+
+.tabs__content {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  transition: height 0.3s;
+}
+
+.tabs__element {
+
+  display: none;
+
+  &.is-active {
+    display: block;
+  }
+}
+
+.tabs__subitem {
+  list-style: none;
+
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: repeat(3, 360px);
+  gap: 40px;
+
+  @media (max-width: 1224px) {
+    grid-template-columns: 442px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 290px;
+  }
+}
+
+.tabs__item {
+  padding: 7px;
+
+  position: relative;
+  z-index: 2;
+
+  &::before {
+    width: 100%;
+    height: 100%;
+
+    content: "";
+    position: absolute;
+    z-index: 1;
+
+    top: 0;
+    left: 0;
+
+    background: $color-default-white;
+  }
+
+  &:hover &::before {
+    background: $red-to-right-button;
+  }
+}
+
+.tabs__content-wrapper {
+  padding: 61px 70px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+  z-index: 4;
+  background-color: $color-default-white;
+
+  @include vp-1023 {
+    padding: 61px 111px;
+  }
+
+  @include vp-1023 {
+    padding: 48px 35px;
+  }
+}
+
+.tabs__title {
+  margin: 0;
+  margin-bottom: 22px;
+
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 29px;
+
+  @include vp-767 {
+    margin-bottom: 20px;
+
+    font-size: 22px;
+    line-height: 24px;
+  }
+}
+
+.tabs__subtitle {
+  margin: 0;
+  margin-bottom: 96px;
+
+  font-size: 16px;
+  line-height: 24px;
+
+  color: $color-chambray;
+
+  @include vp-767 {
+    margin-bottom: 81px;
+  }
+}
+
+.tabs__price-wrapper {
+  margin-bottom: 59px;
+
+  display: flex;
+  align-items: center;
+
+  @include vp-767 {
+    margin-bottom: 50px;
+  }
+}
+
+.tabs__price {
+  position: relative;
+  z-index: 2;
+
+  margin: 0;
+  margin-right: 14px;
+
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 90px;
+
+  color: $color-egyptian-blue;
+
+  @include vp-767 {
+    font-size: 48px;
+    line-height: 72px;
+  }
+
+  &::after {
+    content: attr(data-price);
+
+    position: absolute;
+    left: -24px;
+    bottom: -17px;
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 150px;
+
+    color: $color-whisper;
+
+    z-index: -1;
+    opacity: 0.48;
+
+    @include vp-767 {
+      font-size: 80px;
+      line-height: 120px;
+    }
+  }
+}
+
+.tabs__simbol {
+  position: relative;
+  z-index: 2;
+
+  color: $color-sapphire;
+
+  font-size: 53px;
+  color: $color-sapphire
+}
+
+.tabs__link {
+  padding: 28px 44px;
+  padding-right: 42px;
+
+  border: 2px solid $color-sapphire;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    border-color: transparent;
+
+    background: $red-to-right-button;
+    color: $color-default-white;
+  }
+}
+
+.tabs--unset .tabs__content {
+  height: 100px;
+}
+
+.tabs--unset .tabs__element {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}

@@ -1,6 +1,18 @@
-import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
-import {Form} from './modules/form-validate/form';
+import {
+  iosVhFix
+} from './utils/ios-vh-fix';
+import {
+  initModals
+} from './modules/modals/init-modals';
+import {
+  Form
+} from './modules/form-validate/form';
+import {
+  initVideo
+} from './modules/setup-video/init-video';
+import {
+  initTabs
+} from './modules/tabs/init-tabs';
 
 // ---------------------------------
 
@@ -22,6 +34,8 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
   });
+  initVideo();
+  initTabs();
 });
 
 // ---------------------------------
