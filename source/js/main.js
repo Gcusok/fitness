@@ -36,6 +36,39 @@ window.addEventListener('DOMContentLoaded', () => {
   });
   initVideo();
   initTabs();
+
+  const coaches = new Swiper('.slider__swiper', {
+    direction: 'horizontal',
+    sliderPerGroup: 1,
+    slidesPerView: 4,
+    spaceBetween: 40,
+    loop: true,
+    freeMode: 'true',
+    wrapperClass: 'slider__swiper-wrapper',
+    slideClass: 'slider__slide',
+    navigation: {
+      nextEl: '.slider__button--next',
+      prevEl: '.slider__button--prev',
+    },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+    },
+    breakpoints: {
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      767: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+      },
+    },
+  });
 });
 
 // ---------------------------------
