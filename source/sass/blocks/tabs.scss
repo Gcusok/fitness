@@ -135,7 +135,7 @@
     background: $color-default-white;
   }
 
-  &:hover &::before {
+  &:hover::before {
     background: $red-to-right-button;
   }
 }
@@ -257,7 +257,7 @@
   padding: 28px 44px;
   padding-right: 42px;
 
-  border: 2px solid $color-sapphire;
+  outline: 2px solid $color-sapphire;
 
   font-weight: 700;
   font-size: 12px;
@@ -267,7 +267,7 @@
 
   &:hover,
   &:focus {
-    border-color: transparent;
+    outline: 2px solid none;
 
     background: $red-to-right-button;
     color: $color-default-white;

@@ -62,7 +62,7 @@
       </section>
     </header>
     <main>
-      <!-- Раздел тренажерный зал -->
+      <!-- Ттренажерный зал -->
       <section class="gym">
         <div class="container">
           <div class="gym__wrapper">
@@ -112,8 +112,8 @@
                   <img src="img/content/desktop/gym-video-desktop.jpg" data-media="img" width="364" height="228"
                     srcset="img/content/desktop/gym-video-desktop@2.jpg 2x" alt="Привью видео">
                 </picture>
-                <button class="gym__video-button gym__video-button--enabled" aria-label="Воспроизвести видео"
-                  data-media="button" type="button">
+                <span class="gym__video-button gym__video-button--enabled" aria-label="Воспроизвести видео"
+                  data-media="button">
                   <svg class="gym__icon" xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="none">
                     <circle cx="50" cy="50" r="49" stroke="url(#a)" stroke-opacity=".2" stroke-width="2" />
                     <circle cx="50" cy="50" r="36" fill="url(#b)" />
@@ -129,14 +129,14 @@
                       </linearGradient>
                     </defs>
                   </svg>
-                </button>
+                </span>
 
               </a>
             </div>
           </div>
         </div>
       </section>
-      <!-- Раздел Абонементы -->
+      <!--Абонементы -->
       <section class="subscriptions">
         <div class="container">
           <div class="subscriptions__wrapper">
@@ -287,6 +287,43 @@
           </div>
         </div>
       </section>
+      <!-- Промо -->
+      <article class="promo">
+        <div class="container">
+          <div class="promo__wrapper">
+            <div class="promo__content-wrapper">
+              <h2 class="promo__title">SUPER GAMES</h2>
+              <dl class="promo__time-wrapper">
+                <dt class="promo__time-title">Дата</dt>
+                <dd class="promo__time-discription">
+                  7
+                  <span class="promo__data">Марта 2019</span>
+                </dd>
+                <dt class="promo__time-title">Время</dt>
+                <dd class="promo__time-discription">
+                  12:00
+                </dd>
+              </dl>
+              <p class="promo__text">Ежегодные соревнования по CrossFit</p>
+              <a class="promo__link button" href="#">заполнить заявку</a>
+            </div>
+            <div class="promo__img-wrapper">
+              <picture>
+                <source media="(min-width: 1023px)"
+                  srcset="img/content/desktop/super-games-desktop.webp 1x, img/content/desktop/super-games-desktop@2x.webp 2x">
+                <source media="(min-width: 767px)"
+                  srcset="img/content/tablet/super-games-tablet.webp 1x, img/content/tablet/super-games-tablet@2x.webp 2x">
+                <source media="(max-width: 767px)"
+                  srcset="img/content/mobil/super-games-mobil.jpg 1x, img/content/mobil/super-games-mobil@2x.jpg 2x">
+                <source media="(max-width: 1023px)"
+                  srcset="img/content/tablet/super-games-tablet.jpg 1x, img/content/tablet/super-games-tablet@2x.jpg 2x">
+                <img src="img/content/desktop/super-games-desktop.jpg" data-media="img" width="660" height="500"
+                  srcset="img/content/desktop/super-games-desktop@2.jpg 2x" alt="Привью видео">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </article>
     </main>
     <footer>
       <div class="container"></div>
