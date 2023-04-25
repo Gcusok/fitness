@@ -1,0 +1,92 @@
+.advantages {
+  padding-top: 97px;
+  padding-bottom: 147px;
+
+  background-color: $color-ghost-white;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin-bottom: 55px;
+
+    font-family: $ff-alumni;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 65px;
+    letter-spacing: 0.03em;
+
+    align-self: center;
+  }
+
+  &__list-wrapper {}
+
+  &__list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: 1fr 240px 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+
+  &__item {}
+
+  &__sublist {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  &__subitem {
+    display: grid;
+    grid-template-columns: auto 183px;
+    gap: 30px;
+  }
+
+  &__subitem-wrapper-left{}
+
+  &__subitem-wrapper-right{}
+
+  &__value,
+  &__subtitle,
+  &__text {
+    margin: 0;
+  }
+
+  &__value {
+    font-weight: 700;
+    font-size: 71px;
+    line-height: 106px;
+  }
+
+  &__spec {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: $color-persian-blue;
+  }
+
+  &__subtitle {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 33px;
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  &__item--center {}
+}

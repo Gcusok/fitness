@@ -1,30 +1,31 @@
 .slider {
   position: relative;
+  max-width: 1160px;
 
-  &__swiper {
-    overflow: hidden;
+  // &__swiper {
+  //   overflow: hidden;
 
-    position: relative;
-  }
+  //   position: relative;
+  // }
 
-  &__swiper-wrapper {
-    display: flex;
-    max-width: 700px;
-    min-width: 0;
-    height: 100%;
+  // &__swiper-wrapper {
+  //   display: flex;
+  //   width: 500px;
+  //   min-width: 0;
+  //   height: 100%;
 
-    @include vp-1023 {
-      max-width: 543px;
-    }
+  //   @include vp-1023 {
+  //     max-width: 543px;
+  //   }
 
-    @include vp-767 {
-      max-width: 226px;
-    }
-  }
+  //   @include vp-767 {
+  //     max-width: 226px;
+  //   }
+  // }
 
-  &__slide {
-    flex-shrink: 0;
-  }
+  // &__slide {
+  //   flex-shrink: 0;
+  // }
 
   &__button {
     padding: 0;
