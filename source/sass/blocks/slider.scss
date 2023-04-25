@@ -2,31 +2,6 @@
   position: relative;
   max-width: 1160px;
 
-  // &__swiper {
-  //   overflow: hidden;
-
-  //   position: relative;
-  // }
-
-  // &__swiper-wrapper {
-  //   display: flex;
-  //   width: 500px;
-  //   min-width: 0;
-  //   height: 100%;
-
-  //   @include vp-1023 {
-  //     max-width: 543px;
-  //   }
-
-  //   @include vp-767 {
-  //     max-width: 226px;
-  //   }
-  // }
-
-  // &__slide {
-  //   flex-shrink: 0;
-  // }
-
   &__button {
     padding: 0;
     width: 16px;
