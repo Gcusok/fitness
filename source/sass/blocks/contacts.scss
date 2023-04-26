@@ -1,0 +1,151 @@
+.contacts {
+  padding: 56px 159px 70px 120px;
+
+  position: relative;
+
+  @media (max-width: 1360px) {
+    padding: 70px 50px 70px 50px;
+  }
+
+  @include vp-1023 {
+    padding: 70px 179px 70px 133px;
+  }
+
+  @include vp-767 {
+    padding: 70px 15px;
+  }
+
+  &::before {
+    width: 100%;
+    height: 1px;
+
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    background-color: $color-light-slate-grey;
+
+    @include vp-1023 {
+      display: none;
+    }
+  }
+
+  &__wrapper {
+    @include vp-1023 {
+      display: grid;
+      grid-template-columns: auto;
+      align-items: center;
+    }
+
+    @include vp-767 {
+      justify-items: center;
+    }
+
+    @media (max-width: 320px) {
+      justify-items: start;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 43px;
+
+    font-family: $ff-alumni;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 65px;
+
+    @include vp-1023 {
+      margin-bottom: 50px;
+
+      align-self: flex-start;
+
+      font-size: 42px;
+      line-height: 50px;
+    }
+
+    @include vp-767 {
+      font-size: 32px;
+      line-height: 38px;
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0 120px;
+
+    font-style: normal;
+
+    @media (max-width: 1361px) {
+      gap: 0 30px
+    }
+
+    @include vp-1023 {
+      gap: 0 69px;
+    }
+
+    @include vp-767 {
+      grid-template-columns: auto;
+      gap: 35px;
+    }
+  }
+
+  &__list {
+    margin: 0;
+
+    position: relative;
+
+    &:first-child::after {
+      width: 1px;
+      height: 100%;
+
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -36%;
+
+      background-color: $color-light-slate-grey;
+
+      @media (max-width: 1361px) {
+        right: 8%;
+      }
+
+      @include vp-1023 {
+        right: -16%;
+      }
+
+      @include vp-767 {
+        display: none;
+      }
+    }
+  }
+
+  &__subtitle {
+    font-weight: 700;
+    line-height: 24px;
+
+    @include vp-1023 {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 30px;
+
+    font-size: 14px;
+    line-height: 21px;
+
+    @include vp-1023 {
+      font-size: 18px;
+      line-height: 27px;
+    }
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
