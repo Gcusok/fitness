@@ -319,16 +319,28 @@
         </div>
       </article>
       <!-- Тренеры -->
-      <!-- <section class="coaches">
+      <section class="coaches">
         <div class="container">
           <div class="coaches__wrapper">
             <h2 class="coaches__title">Тренеры</h2>
-            <div class="slider">
-              <div class=" swiper"> -->
-      <!-- Карточки слайдера -->
-      <!-- <div class=" swiper-wrapper "> -->
-      <!-- Карточка 1 -->
-      <!-- <div class="swiper-slide coaches-card">
+            <div class="coaches__slider-wrapper">
+              <div class="coaches__button-wrapper">
+                <button class="coaches__button coaches__button--prev slider-button slider-button--prev">
+                  <span class="visually-hidden">
+                    Предыдущие фото
+                  </span>
+                </button>
+                <button class="coaches__button coaches__button--next slider-button slider-button--next">
+                  <span class="visually-hidden">
+                    Следующее фото
+                  </span>
+                </button>
+              </div>
+              <div class="swiper slider">
+                <!-- Карточки слайдера -->
+                <div class="swiper-wrapper slider__wrapper">
+                  <!-- Карточка 1 -->
+                  <div class="swiper-slide coaches-card">
                     <div class="coaches-card__img-wrapper">
                       <picture>
                         <source
@@ -353,9 +365,9 @@
                         <p class="coaches-card__text">Опыт — 6 лет</p>
                       </li>
                     </ul>
-                  </div> -->
-      <!-- Карточка 2 -->
-      <!-- <div class="swiper-slide coaches-card">
+                  </div>
+                  <!-- Карточка 2 -->
+                  <div class="swiper-slide coaches-card">
                     <div class="coaches-card__img-wrapper">
                       <picture>
                         <source
@@ -380,9 +392,9 @@
                         <p class="coaches-card__text">Опыт — 6 лет</p>
                       </li>
                     </ul>
-                  </div> -->
-      <!-- Карточка 3 -->
-      <!-- <div class="swiper-slide coaches-card">
+                  </div>
+                  <!-- Карточка 3 -->
+                  <div class="swiper-slide coaches-card">
                     <div class="coaches-card__img-wrapper">
                       <picture>
                         <source
@@ -407,9 +419,9 @@
                         <p class="coaches-card__text">Опыт — 6 лет</p>
                       </li>
                     </ul>
-                  </div> -->
-      <!-- Карточка 4 -->
-      <!-- <div class="swiper-slide coaches-card">
+                  </div>
+                  <!-- Карточка 4 -->
+                  <div class="swiper-slide coaches-card">
                     <div class="coaches-card__img-wrapper">
                       <picture>
                         <source
@@ -434,9 +446,9 @@
                         <p class="coaches-card__text">Опыт — 6 лет</p>
                       </li>
                     </ul>
-                  </div> -->
-      <!-- Карточка 5 -->
-      <!-- <div class="swiper-slide coaches-card">
+                  </div>
+                  <!-- Карточка 5 -->
+                  <div class="swiper-slide coaches-card">
                     <div class="coaches-card__img-wrapper">
                       <picture>
                         <source
@@ -461,9 +473,9 @@
                         <p class="coaches-card__text">Опыт — 6 лет</p>
                       </li>
                     </ul>
-                  </div> -->
-      <!-- Карточка 6 -->
-      <!-- <div class="swiper-slide coaches-card">
+                  </div>
+                  <!-- Карточка 6 -->
+                  <div class="swiper-slide coaches-card">
                     <div class="coaches-card__img-wrapper">
                       <picture>
                         <source
@@ -490,21 +502,11 @@
                     </ul>
                   </div>
                 </div>
-              </div> -->
-      <!-- <button class="slider__button slider__button--prev button">
-                <span class="visually-hidden">
-                  Предыдущие фото
-                </span>
-              </button>
-              <button class="slider__button slider__button--next button">
-                <span class="visually-hidden">
-                  Следующее фото
-                </span>
-              </button>
+              </div>
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- Преимущества -->
       <section class="advantages">
         <div class="container">
@@ -623,8 +625,40 @@
                 Предыдущие фото
               </span>
             </button>
-            <div class="swiper">
-              <div class="swiper-wrapper">
+            <div class="swiper reviews__swiper">
+              <div class="swiper-wrapper reviews__slider-wrapper">
+                <div class="swiper-slide">
+                  <blockquote class="reviews-card">
+                    <div class="reviews-card__img-wrapper">
+                      <picture>
+                        <source
+                          srcset="img/content/desktop/reviews-anna-desktop.webp 1x, img/content/desktop/reviews-anna-desktop@2x.webp 2x">
+                        <img src="img/content/desktop/reviews-anna-desktop.png" data-media="img" width="80" height="80"
+                          srcset="img/content/desktop/reviews-anna-desktop@2.png 2x" alt="Анна Орлова">
+                      </picture>
+                    </div>
+                    <cite class="reviews-card__title">Анна Орлова</cite>
+                    <p class="reviews-card__text">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда
+                      чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет
+                      очередей»</p>
+                  </blockquote>
+                </div>
+                <div class="swiper-slide reviews__slide">
+                  <blockquote class="reviews-card">
+                    <div class="reviews-card__img-wrapper">
+                      <picture>
+                        <source
+                          srcset="img/content/desktop/reviews-anna-desktop.webp 1x, img/content/desktop/reviews-anna-desktop@2x.webp 2x">
+                        <img src="img/content/desktop/reviews-anna-desktop.png" data-media="img" width="80" height="80"
+                          srcset="img/content/desktop/reviews-anna-desktop@2.png 2x" alt="Анна Орлова">
+                      </picture>
+                    </div>
+                    <cite class="reviews-card__title">Анна Орлова</cite>
+                    <p class="reviews-card__text">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда
+                      чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет
+                      очередей»</p>
+                  </blockquote>
+                </div>
                 <div class="swiper-slide">
                   <blockquote class="reviews-card">
                     <div class="reviews-card__img-wrapper">

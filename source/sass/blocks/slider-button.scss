@@ -43,31 +43,8 @@
     background-color: $color-dark-gray;
   }
 
-  &--prev {
-    left: -5%;
-    top: 50%;
-
-    @media (max-width: 1360px) {
-      left: -3%;
-    }
-
-    @include vp-1023 {
-      left: -11%;
-    }
-  }
-
   &--next {
     rotate: 180deg;
-    right: -5%;
-    top: 50%;
-
-    @media (max-width: 1360px) {
-      right: -3%;
-    }
-
-    @include vp-1023 {
-      right: -11%;
-    }
   }
 
   &:hover {
@@ -81,5 +58,10 @@
 
   &:active {
     scale: 0.8;
+  }
+
+  &.swiper-button-disabled {
+    opacity: 0;
+    cursor: auto;
   }
 }
