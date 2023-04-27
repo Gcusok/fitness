@@ -8,6 +8,9 @@ import {
   Form
 } from './modules/form-validate/form';
 import {
+  initSlowScroll
+} from './modules/slow-scroll/slow-scroll';
+import {
   initVideo
 } from './modules/setup-video/init-video';
 import {
@@ -40,6 +43,7 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
   });
+  initSlowScroll();
   initVideo();
   initTabs();
   initCoachesGallery();
