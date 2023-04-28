@@ -1,19 +1,19 @@
 .hero {
-  padding-top: 68px;
-  padding-bottom: 51px;
+  padding-top: 99px;
+  padding-bottom: 99px;
 
   font-family: $ff-alumni;
   font-weight: 600;
   color: $color-default-white;
 
   @include vp-1023 {
-    padding: 0;
-    padding-bottom: 82px;
+    padding-top: 61px;
+    padding-bottom: 109px;
   }
 
   @include vp-767 {
-    padding-top: 65px;
-    padding-bottom: 80px;
+    padding-top: 59px;
+    padding-bottom: 38px;
   }
 
   &__wrapper {
@@ -34,6 +34,17 @@
     }
 
     img {
+      position: absolute;
+      top: -111px;
+      right: 199px;
+
+      @include vp-1023 {
+        max-width: 324px;
+
+        top: -49px;
+        right: 0;
+      }
+
       @include vp-767 {
         display: none;
       }
@@ -43,7 +54,10 @@
   &__content-wrapper {
     display: grid;
     grid-template-columns: 113px auto;
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: min-content 191px min-content;
+
+    position: relative;
+    z-index: 2;
 
     @include vp-767 {
       grid-template-columns: auto auto;
@@ -62,28 +76,37 @@
     z-index: 2;
 
     font-size: 92px;
+    font-weight: 700;
     line-height: 110px;
     text-align: right;
     letter-spacing: 0.05em;
 
+    text-transform: uppercase;
+
     @include vp-1023 {
+      font-weight: 600;
+
       font-size: 72px;
       line-height: 86px;
+
+      text-transform: none;
     }
 
     @include vp-767 {
+      margin-right: 10px;
       margin-bottom: 30px;
     }
   }
 
   &__subtitle {
     margin: 0;
-    margin-right: 43px;
+    margin-right: 50px;
+    margin-bottom: 15px;
 
     grid-row: 1;
     grid-column: 2;
-    align-self: end;
-    justify-self: end;
+
+    justify-self: right;
 
     font-size: 48px;
     line-height: 58px;
@@ -92,28 +115,47 @@
 
     @include vp-1023 {
       margin: 0;
+      margin-bottom: 7px;
 
       font-size: 34px;
       line-height: 41px;
     }
 
     @include vp-767 {
+      margin-right: 13px;
+      margin-bottom: 12px;
+
       font-size: 28px;
       line-height: 34px;
     }
   }
 
-  &__discription {
+  &__discription-list {
     margin: 0;
+    margin-top: auto;
+    padding: 0;
+
+    list-style: none;
 
     grid-row: 2;
-    align-self: center;
 
     font-family: $ff-roboto;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
     text-align: end;
+
+    position: relative;
+    right: -19px;
+    top: -6px;
+
+    @include vp-1023 {
+      margin-top: auto;
+      margin-bottom: 38px;
+
+      right: 0;
+      top: 0;
+    }
 
     @include vp-767 {
       max-width: 113px;
@@ -124,20 +166,35 @@
     @media (max-width: $vp-320) {
       min-width: 113px;
 
-      top: 15px;
-      right: -13px;
+      top: -23px;
+      right: -8px;
     }
   }
 
+  &__text {
+    margin: 0;
+
+    font-family: $ff-roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: end;
+  }
+
   &__button {
-    padding: 24px 56px;
+    margin-left: auto;
+    margin-top: 80px;
+    padding: 20px 55px;
+    max-width: 230px;
 
     outline: 4px solid $color-default-white;
 
     grid-column: 2;
-    align-self: baseline;
 
     color: $color-default-white;
+    font-size: 12px;
+    line-height: 14px;
+
     background-color: transparent;
 
     transition: $trans-600;
@@ -158,9 +215,8 @@
     }
 
     @include vp-1023 {
-      padding: 24px 33px;
-
-      justify-self: end;
+      margin-top: 22px;
+      padding: 20px 32px;
 
       font-size: 12px;
       line-height: 14px;
@@ -170,7 +226,12 @@
     }
 
     @include vp-767 {
+      margin: 0 auto;
+      margin-top: 10px;
+      min-width: 287px;
+      max-width: 100%;
       max-height: 59px;
+
       grid-column: 1 / 3;
     }
   }

@@ -1,13 +1,15 @@
 .stock {
-  padding-top: 100px;
+  padding-top: 62px;
   padding-bottom: 57px;
 
-  @include vp-767 {
-    padding-top: 70px;
-    padding-bottom: 35px;
+  @include vp-1023 {
+    padding-top: 93px;
   }
 
-  &__wrapper {}
+  @include vp-767 {
+    padding-top: 65px;
+    padding-bottom: 35px;
+  }
 
   &__content-wrapper {
     display: grid;
@@ -16,6 +18,7 @@
 
     @include vp-1023 {
       grid-template-columns: 1fr;
+      gap: 30px;
     }
   }
 
@@ -29,7 +32,7 @@
     text-align: center;
 
     @include vp-1023 {
-      margin-bottom: 50px;
+      margin-bottom: 40px;
 
       font-size: 42px;
       line-height: 50px;
@@ -57,7 +60,7 @@
 
   &__img-wrapper {
     img {
-      height: 465px;
+      height: 462px;
       min-height: 100%;
 
       @include vp-1023 {
@@ -74,6 +77,8 @@
 
   &__first-discount-content {
     padding: 45px;
+    padding-top: 33px;
+
 
     display: flex;
     flex-direction: column;
@@ -83,8 +88,12 @@
 
     color: $color-default-white;
 
+    @include vp-1023 {
+      padding: 33px 44px 45px;
+    }
+
     @include vp-767 {
-      padding: 45px 50px;
+      padding: 34px 50px 45px;
       max-width: 290px;
 
       align-items: center;
@@ -103,6 +112,7 @@
 
   &__value {
     margin: 0;
+    margin-top: -5px;
 
     font-weight: 700;
     font-size: 70px;
@@ -117,7 +127,7 @@
     color: inherit;
 
     @include vp-767 {
-      margin-bottom: 35px;
+      margin-bottom: 30px;
 
       text-align: center;
     }
@@ -127,7 +137,16 @@
       line-height: 25px;
 
       @include vp-767 {
-        margin-bottom: 50px;
+        margin-bottom: 31px;
+        margin-top: -6px;
+      }
+    }
+
+    br {
+      display: none;
+
+      @include vp-1023 {
+        display: block;
       }
     }
   }
@@ -206,6 +225,8 @@
   &__item-bg-wrapper {
     padding: 28px;
 
+    padding-top: 21px;
+
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -217,6 +238,7 @@
 
     @include vp-767 {
       padding: 39px 42px;
+      padding-top: 30px;
 
       align-items: center;
     }
@@ -224,7 +246,7 @@
 
   &__subtitle {
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 6px;
 
     font-weight: 700;
     font-size: 26px;

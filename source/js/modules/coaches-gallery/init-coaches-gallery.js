@@ -18,10 +18,12 @@ const initCoachesGallery = () => {
     },
     breakpoints: {
       320: {
+        initialSlide: 2,
         slidesPerView: 1,
         spaceBetween: 0,
       },
       768: {
+        initialSlide: 2,
         slidesPerView: 2,
         spaceBetween: 30,
       },

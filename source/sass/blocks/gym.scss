@@ -15,12 +15,13 @@
   }
 
   @include vp-767 {
-    padding-top: 70px;
+    padding-top: 63px;
     padding-bottom: 70px;
   }
 
   &__wrapper {
     display: flex;
+    justify-content: flex-end;
 
     @include vp-1023 {
       flex-direction: column;
@@ -28,13 +29,14 @@
   }
 
   &__content {
+    margin-top: 38px;
     margin-right: 85px;
     max-width: 355px;
 
     @include vp-1023 {
       margin: 0;
-      margin-bottom: 50px;
-      max-width: 502px;
+      margin-bottom: 35px;
+      max-width: 530px;
 
       display: flex;
       flex-direction: column;
@@ -43,7 +45,7 @@
     }
 
     @include vp-767 {
-      margin-bottom: 40px;
+      margin-bottom: 25px;
 
       align-items: flex-start;
     }
@@ -51,7 +53,7 @@
 
   &__title {
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 8px;
 
     font-family: $ff-alumni;
     font-weight: 600;
@@ -60,39 +62,46 @@
     letter-spacing: 0.03em;
 
     @include vp-1023 {
-      margin-bottom: 6px;
+      margin-bottom: 1px;
 
       font-size: 42px;
+      line-height: 50px;
+
+      position: relative;
+      left: -8px;
     }
 
     @include vp-767 {
+      margin-bottom: 6px;
+
       font-size: 32px;
       line-height: 38px;
 
-      margin-bottom: 20px;
+      position: relative;
+      left: 0px;
     }
   }
 
   &__subtitle {
     margin: 0;
-    margin-bottom: 55px;
+    margin-bottom: 37px;
 
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
 
     @include vp-1023 {
-      margin-bottom: 50px;
+      margin-bottom: 33px;
     }
 
     @include vp-767 {
-      margin-bottom: 40px;
+      margin-bottom: 22px;
     }
   }
 
   &__text {
     margin: 0;
-    margin-bottom: 15px;
+    margin-bottom: 9px;
 
     @include vp-1023 {
       text-align: center;
@@ -107,9 +116,19 @@
         display: none;
       }
     }
+
+    &:last-child {
+      margin: 0;
+    }
+
+    br {
+      display: none;
+
+      @media (max-width: $vp-320) {
+        display: block;
+      }
+    }
   }
-
-
 
   &__media {
     position: relative;
@@ -140,11 +159,14 @@
   &__video {
     position: absolute;
 
-    top: 69%;
-    left: -69px;
+    top: 63%;
+    left: -63px;
 
     @include vp-1023 {
-      top: 102%;
+      width: 266px;
+      height: 167px;
+
+      top: 99%;
       left: 50%;
       transform: translate(-50%, -50%);
     }
@@ -225,7 +247,7 @@
     position: absolute;
     display: none;
 
-    top: 50%;
+    top: 51%;
     left: 50%;
 
     transform: translate(-50%, -50%);
@@ -246,5 +268,9 @@
 
   &__icon {
     transition: $trans-600;
+
+    @include vp-1023 {
+      scale: 0.70;
+    }
   }
 }

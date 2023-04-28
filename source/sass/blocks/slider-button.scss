@@ -13,38 +13,37 @@
 
   cursor: pointer;
 
-  &::before {
-    height: 16px;
+  &::before,
+  &::after{
+    height: 19px;
     width: 1px;
 
     position: absolute;
-    top: 2px;
     left: 6px;
-
-    rotate: 45deg;
 
     content: "";
 
     background-color: $color-dark-gray;
   }
 
-  &::after {
-    height: 16px;
-    width: 1px;
 
+  &::before {
+    position: absolute;
+    top: -2px;
+
+    rotate: 45deg;
+  }
+
+  &::after {
     position: absolute;
     bottom: 2px;
-    left: 6px;
 
     rotate: -45deg;
-
-    content: "";
-
-    background-color: $color-dark-gray;
   }
 
   &--next {
     rotate: 180deg;
+    transform: translateY(3px);
   }
 
   &:hover {

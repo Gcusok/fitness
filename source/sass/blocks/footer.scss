@@ -1,5 +1,6 @@
 .footer {
   padding: 41px 0;
+  padding-bottom: 25px;
 
   background-color: $color-black-russian;
 
@@ -8,7 +9,7 @@
   }
 
   @include vp-767 {
-    padding: 50px 0 52px 0;
+    padding: 50px 0 38px 0;
   }
 
   &__wrapper {
@@ -17,6 +18,15 @@
     flex-wrap: wrap;
 
     position: relative;
+  }
+
+  &__logo {
+    margin-top: 10px;
+
+    @include vp-1023 {
+      margin-top: 4px;
+      margin-right: 16px;
+    }
   }
 
   &__social-list {

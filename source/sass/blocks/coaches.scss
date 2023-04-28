@@ -8,8 +8,8 @@
   }
 
   @include vp-767 {
-    padding-top: 35px;
-    padding-bottom: 70px;
+    padding-top: 29px;
+    padding-bottom: 80px;
   }
 
   &__wrapper {
@@ -27,6 +27,10 @@
 
     position: relative;
     align-self: center;
+
+    @include vp-1023 {
+      left: 6px;
+    }
 
     @include vp-767 {
       padding-left: 32px;
@@ -69,24 +73,18 @@
   }
 
   &__button {
-    top: 48%;
+    top: 45%;
 
     &--prev {
       left: 0;
-
-
-      // @media (max-width: 1360px) {
-      //   left: -1%;
-      // }
     }
 
     &--next {
       right: 0;
 
-
-      // @media (max-width: 1360px) {
-      //   right: -1%;
-      // }
+      @include vp-1023 {
+        right: 12px;
+      }
     }
   }
 
@@ -111,6 +109,9 @@
     }
 
     @include vp-767 {
+      font-size: 32px;
+      line-height: 38px;
+
       margin-bottom: 50px;
     }
   }

@@ -1,5 +1,6 @@
 .subscriptions {
   padding: 120px 0;
+  padding-top: 164px;
 
   position: relative;
   color: $color-sapphire;
@@ -8,10 +9,12 @@
 
   @include vp-1023 {
     padding: 100px 0;
+    padding-bottom: 105px;
   }
 
   @include vp-767 {
     padding: 70px 0;
+    padding-top: 64px;
   }
 
   &__wrapper {
@@ -22,7 +25,7 @@
 
   &__title {
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 17px;
 
     font-family: $ff-alumni;
     font-weight: 600;
@@ -31,29 +34,39 @@
     letter-spacing: 0.03em;
 
     @include vp-1023 {
-      margin-bottom: 26px;
+      margin-bottom: 21px;
 
       font-size: 42px;
       line-height: 50px;
     }
 
     @include vp-767 {
-      margin-bottom: 35px;
+      margin-bottom: 21px;
 
       font-size: 32px;
       line-height: 38px;
     }
   }
 
-  img {
+  &__background-wrapper {
     position: absolute;
-
-    right: 0;
-    bottom: 0;
     z-index: 1;
+    right: -110px;
+    top: 68%;
+    rotate: 330deg;
+
+    @media (max-width: 1224px) {
+      right: -23px;
+      top: 85.4%;
+      scale: 1.30;
+      rotate: 1deg;
+    }
 
     @include vp-767 {
-          display: none;
-        }
+      display: none;
+    }
+
   }
+
+
 }

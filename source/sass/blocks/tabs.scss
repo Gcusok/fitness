@@ -8,7 +8,7 @@
   margin: 0;
   margin-bottom: 40px;
   padding: 0;
-  padding-bottom: 20px;
+  padding-bottom: 11px;
   min-width: 341px;
 
   display: flex;
@@ -18,10 +18,6 @@
 
   border-bottom: solid $color-tabs-border;
 
-  @media screen and (max-width: 767px) {
-    flex-wrap: wrap;
-  }
-
   @include vp-1023 {
     min-width: 332px;
 
@@ -29,12 +25,14 @@
   }
 
   @include vp-767 {
+    margin-bottom: 34px;
     min-width: 290px;
   }
 }
 
 .tabs__control {
   margin: 0;
+  padding: 0;
   min-width: auto;
   justify-content: center;
 
@@ -44,8 +42,12 @@
 
   color: $color-manatee;
 
+  font-weight: 400;
   font-size: 20px;
   line-height: 30px;
+
+  text-transform: lowercase;
+  letter-spacing: normal;
 
   cursor: pointer;
 
@@ -71,11 +73,19 @@
       display: block;
       position: absolute;
 
-      bottom: -22px;
+      bottom: -13px;
       left: -1px;
 
       background-color: $color-crimson;
     }
+  }
+}
+
+.tabs__control-item {
+  margin-right: 46px;
+
+  &:last-child {
+    margin: 0;
   }
 }
 
@@ -112,6 +122,7 @@
 
   @include vp-767 {
     grid-template-columns: 290px;
+    gap: 35px;
   }
 }
 
@@ -142,6 +153,7 @@
 
 .tabs__content-wrapper {
   padding: 61px 70px;
+  padding-top: 53px;
 
   display: flex;
   flex-direction: column;
@@ -152,24 +164,25 @@
   background-color: $color-default-white;
 
   @include vp-1023 {
-    padding: 61px 111px;
+    padding: 58px 35px;
   }
 
-  @include vp-1023 {
-    padding: 48px 35px;
+  @include vp-767 {
+    padding-top: 44px;
+    padding-bottom: 49px;
   }
 }
 
 .tabs__title {
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 10px;
 
   font-weight: 700;
   font-size: 26px;
   line-height: 29px;
 
   @include vp-767 {
-    margin-bottom: 20px;
+    margin-bottom: 9px;
 
     font-size: 22px;
     line-height: 24px;
@@ -178,7 +191,7 @@
 
 .tabs__subtitle {
   margin: 0;
-  margin-bottom: 96px;
+  margin-bottom: 66px;
 
   font-size: 16px;
   line-height: 24px;
@@ -186,18 +199,22 @@
   color: $color-chambray;
 
   @include vp-767 {
-    margin-bottom: 81px;
+    margin-bottom: 52px;
   }
 }
 
 .tabs__price-wrapper {
-  margin-bottom: 59px;
+  margin-bottom: 36px;
 
   display: flex;
   align-items: center;
 
   @include vp-767 {
-    margin-bottom: 50px;
+    margin-bottom: 34px;
+
+    position: relative;
+    left: 3px;
+    top: 4px;
   }
 }
 
@@ -215,6 +232,8 @@
   color: $color-egyptian-blue;
 
   @include vp-767 {
+    margin-right: 12px;
+
     font-size: 48px;
     line-height: 72px;
   }
@@ -223,8 +242,8 @@
     content: attr(data-price);
 
     position: absolute;
-    left: -24px;
-    bottom: -17px;
+    left: -18px;
+    bottom: -7px;
 
     font-family: inherit;
     font-weight: 700;
@@ -249,13 +268,16 @@
 
   color: $color-sapphire;
 
-  font-size: 53px;
-  color: $color-sapphire
+  font-size: 57px;
+  font-weight: 600;
+
+  @include vp-767 {
+    font-size: 45px;
+  }
 }
 
 .tabs__link {
-  padding: 28px 44px;
-  padding-right: 42px;
+  padding: 24px 42px 24px 44px;
 
   outline: 2px solid $color-sapphire;
 

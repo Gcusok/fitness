@@ -1,8 +1,13 @@
 .sections-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  position: relative;
+  overflow: hidden;
 
-  @include vp-1023 {
-    grid-template-columns: 1fr;
+  &--form-contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @include vp-1023 {
+      grid-template-columns: 1fr;
+    }
   }
 }

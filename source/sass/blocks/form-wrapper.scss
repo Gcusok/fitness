@@ -1,5 +1,5 @@
 .form-wrapper {
-  padding: 56px 170px 70px 103px;
+  padding: 56px 170px 63px 103px;
 
   display: flex;
   flex-direction: column;
@@ -9,23 +9,23 @@
   }
 
   @include vp-1023 {
-    padding: 70px 163px 70px 133px;
+    padding: 61px 163px 67px 133px;
 
     align-items: center;
   }
 
   @include vp-767 {
-    padding: 70px 15px;
+    padding: 65px 15px;
   }
 
   form {
     display: grid;
     grid-template-columns: repeat(2, 190px);
-    gap: 30px;
+    gap: 28px 30px;
 
     @include vp-1023 {
       grid-template-columns: repeat(2, 206px);
-      gap: 30px 60px;
+      gap: 28px 60px;
     }
 
     @include vp-767 {
@@ -46,7 +46,8 @@
     letter-spacing: 0.03em;
 
     @include vp-1023 {
-      margin-bottom: 50px;
+      margin-bottom: 40px;
+      align-self: flex-start;
 
       font-weight: 700;
       font-size: 42px;
@@ -74,8 +75,7 @@
 
     input {
       width: 100%;
-      padding: 0;
-      padding-bottom: 10px;
+      padding: 0 0 4px;
 
       font-family: $ff-roboto;
       font-weight: 400;
@@ -112,7 +112,7 @@
   }
 
   &__submit {
-    padding: 21px 0;
+    padding: 18px 0;
 
     display: block;
     grid-column: 1/3;
