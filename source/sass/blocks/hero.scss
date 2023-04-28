@@ -58,6 +58,9 @@
 
     grid-column: 2;
 
+    position: relative;
+    z-index: 2;
+
     font-size: 92px;
     line-height: 110px;
     text-align: right;
@@ -116,7 +119,6 @@
       max-width: 113px;
       max-height: 51px;
       position: relative;
-      // top: 84px;
     }
 
     @media (max-width: $vp-320) {

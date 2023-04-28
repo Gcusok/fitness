@@ -77,20 +77,24 @@
     grid-template-columns: min-content 1fr;
     gap: 30px;
 
-    // &::before {
-    //   position: absolute;
-    //   top: -42px;
-    //   left: 0;
-    //   width: 100%;
-    //   height: 2px;
+    position: relative;
 
-    //   content: "";
-    //   background-color: $color-advantages-line;
+    &--desktop-only {
+      &::before {
+        position: absolute;
+        bottom: -42px;
+        left: 0;
+        width: 100%;
+        height: 2px;
 
-    //   @include vp-1023 {
-    //     display: none;
-    //   }
-    // }
+        content: "";
+        background-color: $color-advantages-line;
+
+        @include vp-1023 {
+          display: none;
+        }
+      }
+    }
 
     @include vp-1023 {
       grid-column: 2/3;
@@ -175,6 +179,8 @@
   }
 
   &__value {
+    max-width: 179px;
+
     position: relative;
     z-index: 2;
 

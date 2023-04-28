@@ -22,12 +22,17 @@
   }
 
   &__slider-wrapper {
+    padding-left: 56px;
+    padding-right: 56px;
+
     position: relative;
     align-self: center;
 
-    @media (max-width: 1360px) {
-      align-self: center;
+    @include vp-767 {
+      padding-left: 32px;
+      padding-right: 32px;
     }
+
   }
 
   &__button-wrapper {
@@ -64,22 +69,24 @@
   }
 
   &__button {
+    top: 48%;
+
     &--prev {
       left: 0;
-      top: 64%;
 
-      @media (max-width: 1360px) {
-        left: -1%;
-      }
+
+      // @media (max-width: 1360px) {
+      //   left: -1%;
+      // }
     }
 
     &--next {
       right: 0;
-      top: 64%;
 
-      @media (max-width: 1360px) {
-        right: -1%;
-      }
+
+      // @media (max-width: 1360px) {
+      //   right: -1%;
+      // }
     }
   }
 

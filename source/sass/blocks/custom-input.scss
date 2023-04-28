@@ -76,11 +76,11 @@
 
     input,
     textarea {
-      border-bottom: 2px solid #ff1553;
+      border-bottom: 1px solid #ff1553;
 
       &:focus,
       &:hover {
-        border-bottom: 2px solid rgba(#ff1553, 0.5);
+        border-bottom: 1px solid rgba(#ff1553, 0.5);
       }
     }
   }
