@@ -28,15 +28,10 @@ const initCoachesGallery = () => {
         spaceBetween: 30,
       },
       1023: {
-        slidesPerView: 3,
+        slidesPerView: 4,
         spaceBetween: 30,
       },
-      1024: {
-        slidesPerView: 3,
-        spaceBetween: 40,
-      },
       1360: {
-        slidesPerView: 4,
         spaceBetween: 40,
       },
     },

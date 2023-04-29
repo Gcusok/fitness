@@ -82,7 +82,7 @@
     font-style: normal;
 
     @media (max-width: 1361px) {
-      gap: 0 30px
+      gap: 0 30px;
     }
 
     @include vp-1023 {
@@ -149,7 +149,7 @@
   }
 
   &__text {
-    margin: 0px 0 20px;
+    margin: 0 0 20px;
 
     font-size: 14px;
     line-height: 21px;

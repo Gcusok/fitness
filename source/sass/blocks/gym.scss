@@ -1,6 +1,6 @@
 .gym {
   padding-top: 120px;
-  padding-bottom: 135px;
+  padding-bottom: 189px;
 
   font-weight: 300;
   font-size: 16px;
@@ -78,7 +78,7 @@
       line-height: 38px;
 
       position: relative;
-      left: 0px;
+      left: 0;
     }
   }
 
@@ -135,7 +135,6 @@
   }
 
   &__imge-wrapper {
-
     img {
       @include vp-1023 {
         width: 100%;
@@ -159,7 +158,7 @@
   &__video {
     position: absolute;
 
-    top: 63%;
+    top: 71%;
     left: -63px;
 
     @include vp-1023 {
@@ -270,7 +269,7 @@
     transition: $trans-600;
 
     @include vp-1023 {
-      scale: 0.70;
+      scale: 0.7;
     }
   }
 }

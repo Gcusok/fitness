@@ -63,7 +63,7 @@
       grid-template-columns: auto auto;
 
       position: relative;
-      justify-content: space-evenly
+      justify-content: space-evenly;
     }
   }
 
@@ -211,7 +211,7 @@
 
     &:active {
       background-color: $color-default-white;
-      box-shadow: 0 3px 6px 0 #000 inset, inset -3px 0px 6px #000, inset 2px 0px 6px #000, inset 0px -3px 6px #000;
+      box-shadow: 0 3px 6px 0 $color-default-black inset, inset -3px 0 6px $color-default-black, inset 2px 0 6px $color-default-black, inset 0 -3px 6px $color-default-black;
     }
 
     @include vp-1023 {
