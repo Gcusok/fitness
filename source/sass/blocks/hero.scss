@@ -6,6 +6,26 @@
   font-weight: 600;
   color: $color-default-white;
 
+  &::before {
+    width: 100%;
+    height: 100%;
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: $bg-red-to-blue;
+
+    @include vp-1023 {
+      background: $bg-red-to-blue-tablet;
+    }
+
+    @include vp-767 {
+      background: $bg-red-to-blue-mobil;
+    }
+  }
+
   @include vp-1023 {
     padding-top: 61px;
     padding-bottom: 109px;
@@ -233,25 +253,6 @@
       max-height: 59px;
 
       grid-column: 1 / 3;
-    }
-  }
-
-  &__background {
-    width: 100%;
-    height: 100%;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    background: $bg-red-to-blue;
-
-    @include vp-1023 {
-      background: $bg-red-to-blue-tablet;
-    }
-
-    @include vp-767 {
-      background: $bg-red-to-blue-mobil;
     }
   }
 }
