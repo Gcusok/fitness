@@ -7,23 +7,27 @@
   }
 
   &:hover &__list,
-  &:focus &__list {
+  &:focus &__list{
     top: 0;
     opacity: 1;
   }
 
-  &:hover &__title {
+  &:hover &__title,
+  &:focus &__title{
     margin: 0;
     z-index: 3;
     text-align: center;
   }
 
   &:hover &__item,
-  &:hover &__spec {
+  &:hover &__spec,
+  &:focus &__item,
+  &:focus &__spec{
     opacity: 1;
   }
 
-  &:hover &__spec {
+  &:hover &__spec,
+  &:focus &__spec {
     margin-top: -5px;
     height: auto;
     width: auto;

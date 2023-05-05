@@ -2832,6 +2832,12 @@ button,
   color: #ffffff;
 }
 
+.promo__img-wrapper img {
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 .promo__title {
   margin: 0;
   margin-left: 14px;
@@ -3077,18 +3083,22 @@ button,
   opacity: 1;
 }
 
-.coaches-card:hover .coaches-card__title {
+.coaches-card:hover .coaches-card__title,
+.coaches-card:focus .coaches-card__title {
   margin: 0;
   z-index: 3;
   text-align: center;
 }
 
 .coaches-card:hover .coaches-card__item,
-.coaches-card:hover .coaches-card__spec {
+.coaches-card:hover .coaches-card__spec,
+.coaches-card:focus .coaches-card__item,
+.coaches-card:focus .coaches-card__spec {
   opacity: 1;
 }
 
-.coaches-card:hover .coaches-card__spec {
+.coaches-card:hover .coaches-card__spec,
+.coaches-card:focus .coaches-card__spec {
   margin-top: -5px;
   height: auto;
   width: auto;
@@ -4472,6 +4482,10 @@ button,
   .stock__img-wrapper img {
     width: 399px;
     height: 462px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top;
   }
 
   .stock__first-discount-content {
@@ -4935,7 +4949,7 @@ button,
 
   .coaches__button {
     scale: 0.75;
-    top: 45%;
+    top: 42%;
   }
 
   .coaches__button--next {

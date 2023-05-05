@@ -70,6 +70,9 @@
       @media (max-width: 1199px) {
         width: 399px;
         height: 462px;
+
+        object-fit: cover;
+        object-position: top;
       }
 
       @include vp-767 {
