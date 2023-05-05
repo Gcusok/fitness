@@ -2179,6 +2179,8 @@ button,
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -2397,7 +2399,7 @@ button,
 
 .gym {
   padding-top: 120px;
-  padding-bottom: 189px;
+  padding-bottom: 233px;
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
@@ -2461,7 +2463,7 @@ button,
 
 .gym__video {
   position: absolute;
-  top: 71%;
+  top: 286px;
   left: -63px;
 }
 
@@ -2536,8 +2538,7 @@ button,
 }
 
 .subscriptions {
-  padding: 120px 0;
-  padding-top: 164px;
+  padding: 121px 0 120px;
   position: relative;
   color: #102654;
   background-color: #f8f9fc;
@@ -2570,7 +2571,7 @@ button,
   position: absolute;
   z-index: 1;
   right: -110px;
-  top: 68%;
+  top: 66%;
   rotate: 330deg;
 }
 
@@ -2655,6 +2656,7 @@ button,
 }
 
 .tabs__element {
+  width: 100%;
   display: none;
 }
 
@@ -2809,8 +2811,8 @@ button,
 .promo__wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 500px auto;
-  grid-template-columns: 500px auto;
+  -ms-grid-columns: auto auto;
+  grid-template-columns: auto auto;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -3069,7 +3071,8 @@ button,
   display: none;
 }
 
-.coaches-card:hover .coaches-card__list {
+.coaches-card:hover .coaches-card__list,
+.coaches-card:focus .coaches-card__list {
   top: 0;
   opacity: 1;
 }
@@ -3094,7 +3097,6 @@ button,
 
 .coaches-card__wrapper {
   height: 100%;
-  max-height: 294px;
   margin: 0;
 }
 
@@ -3387,6 +3389,9 @@ button,
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
 }
 
 .stock__title {
@@ -3407,7 +3412,6 @@ button,
 
 .stock__img-wrapper img {
   height: 462px;
-  min-height: 100%;
 }
 
 .stock__first-discount-content {
@@ -3445,6 +3449,7 @@ button,
 
 .stock__text {
   margin: 0;
+  margin-bottom: 10px;
   font-size: 16px;
   line-height: 22px;
   color: inherit;
@@ -3905,23 +3910,14 @@ button,
 .navigation__list {
   margin: 0;
   padding: 0;
-  max-width: 431px;
   width: 100%;
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[5];
+  grid-template-columns: repeat(5, auto);
+  gap: 40px;
   color: #ffffff;
-}
-
-.navigation__item {
-  margin-right: 40px;
-}
-
-.navigation__item:last-child {
-  margin: 0;
 }
 
 .navigation__link {
@@ -4028,6 +4024,12 @@ button,
   }
 }
 
+@media (max-width: 1238px) {
+  .promo__content-wrapper {
+    padding: 40px 34px 35px;
+  }
+}
+
 @media (max-width: 1224px) {
   .subscriptions__background-wrapper {
     right: -23px;
@@ -4038,6 +4040,23 @@ button,
 }
 
 @media (max-width: 1199px) {
+  .header {
+    padding-top: 40px;
+  }
+
+  .header__logo {
+    margin: 0;
+  }
+
+  .header__link {
+    position: relative;
+    top: -6px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+  }
+
   .logo--header {
     width: 82px;
     height: 17px;
@@ -4099,6 +4118,84 @@ button,
     max-height: 57px;
   }
 
+  .gym {
+    padding-top: 100px;
+    padding-bottom: 183px;
+  }
+
+  .gym__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .gym__content {
+    margin: 0;
+    margin-bottom: 35px;
+    max-width: 530px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+  }
+
+  .gym__title {
+    margin-bottom: 1px;
+    font-size: 42px;
+    line-height: 50px;
+    position: relative;
+    left: -8px;
+  }
+
+  .gym__subtitle {
+    margin-bottom: 33px;
+  }
+
+  .gym__text {
+    text-align: center;
+  }
+
+  .gym__text--desktop-only {
+    display: none;
+  }
+
+  .gym__imge-wrapper img {
+    width: 100%;
+  }
+
+  .gym__imge-wrapper {
+    width: 100%;
+  }
+
+  .gym__video {
+    width: 266px;
+    min-height: 167px;
+    top: 99%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .gym__iframe {
+    width: 266px;
+    height: 167px;
+  }
+
+  .gym__icon {
+    scale: 0.7;
+  }
+
   .subscriptions {
     padding: 100px 0;
     padding-bottom: 105px;
@@ -4111,6 +4208,7 @@ button,
   }
 
   .tabs__controls {
+    margin-bottom: 42px;
     min-width: 332px;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -4123,9 +4221,9 @@ button,
   }
 
   .tabs__subitem {
-    -ms-grid-columns: 290px;
-    grid-template-columns: 290px;
-    gap: 35px;
+    -ms-grid-columns: 442px;
+    grid-template-columns: 442px;
+    gap: 40px;
   }
 
   .tabs__content-wrapper {
@@ -4137,21 +4235,43 @@ button,
     padding-bottom: 50px;
   }
 
+  .promo__wrapper {
+    -ms-grid-columns: 292px 386px;
+    grid-template-columns: 292px 386px;
+  }
+
   .promo__content-wrapper {
+    -ms-grid-columns: 117px auto;
+    grid-template-columns: 117px auto;
     padding-top: 46px;
     padding-bottom: 29px;
+    padding-left: 45px;
+    gap: 5px 29px;
   }
 
   .promo__title {
+    font-size: 48px;
+    line-height: 46px;
     margin-left: 4px;
+    margin-top: 3px;
+  }
+
+  .promo__time-wrapper {
+    margin-top: -6px;
+    position: relative;
+    top: -4px;
   }
 
   .promo__time-title {
-    margin-bottom: 2px;
+    margin-top: 3px;
+    font-size: 12px;
+    line-height: 18px;
   }
 
   .promo__time-discription {
     margin-bottom: 0;
+    font-size: 24px;
+    line-height: 36px;
   }
 
   .promo__time-discription::before {
@@ -4162,9 +4282,26 @@ button,
     width: 42px;
   }
 
+  .promo__data {
+    margin-left: 3px;
+    font-size: 10px;
+    line-height: 15px;
+  }
+
   .promo__text {
     position: relative;
-    top: -10px;
+    top: -28px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .promo__link {
+    max-width: 202px;
+    margin-top: 0;
+    padding: 12px 42px;
+    font-size: 10px;
+    line-height: 12px;
+    border: 2px solid #ffffff;
   }
 
   .coaches {
@@ -4178,16 +4315,46 @@ button,
     align-items: center;
   }
 
+  .coaches__slider-wrapper {
+    padding-left: 56px;
+    padding-right: 56px;
+  }
+
+  .coaches__button-wrapper {
+    left: -24px;
+    min-width: 107%;
+  }
+
+  .coaches__button--prev {
+    left: -2px;
+  }
+
+  .coaches__button--next {
+    right: 1px;
+  }
+
+  .coaches__title {
+    margin-bottom: 31px;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 50px;
+  }
+
   .slider__wrapper {
     max-width: 576px;
   }
 
   .coaches-card__img-wrapper img {
     width: 268px;
+    max-height: 294px;
+  }
+
+  .coaches-card__content {
+    max-width: 268px;
   }
 
   .advantages {
-    padding-top: 95px;
+    padding-top: 92px;
     padding-bottom: 70px;
   }
 
@@ -4203,10 +4370,26 @@ button,
   }
 
   .advantages__list {
-    width: 100%;
-    gap: 22px 30px;
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 22px 30px;
+  }
+
+  .advantages__item {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+
+  .advantages__item--desktop-only::before {
+    display: none;
+  }
+
+  .advantages__item--left {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
   }
 
   .advantages__item--center {
@@ -4374,9 +4557,9 @@ button,
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
   }
 
   .contacts::before {
@@ -4436,10 +4619,7 @@ button,
 
   .navigation__list {
     max-width: 391px;
-  }
-
-  .navigation__item {
-    margin-right: 30px;
+    gap: 30px;
   }
 }
 
@@ -4453,142 +4633,6 @@ button,
 @media (max-width: 1023px) {
   .container {
     padding: 0 45px;
-  }
-
-  .header {
-    padding-top: 40px;
-  }
-
-  .header__logo {
-    margin: 0;
-  }
-
-  .header__link {
-    position: relative;
-    top: -6px;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-    letter-spacing: 0.02em;
-  }
-
-  .gym {
-    padding-top: 100px;
-    padding-bottom: 183px;
-  }
-
-  .gym__wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  .gym__content {
-    margin: 0;
-    margin-bottom: 35px;
-    max-width: 530px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
-  }
-
-  .gym__title {
-    margin-bottom: 1px;
-    font-size: 42px;
-    line-height: 50px;
-    position: relative;
-    left: -8px;
-  }
-
-  .gym__subtitle {
-    margin-bottom: 33px;
-  }
-
-  .gym__text {
-    text-align: center;
-  }
-
-  .gym__text--desktop-only {
-    display: none;
-  }
-
-  .gym__imge-wrapper img {
-    width: 100%;
-  }
-
-  .gym__imge-wrapper {
-    width: 100%;
-  }
-
-  .gym__video {
-    width: 266px;
-    min-height: 167px;
-    top: 99%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
-
-  .gym__iframe {
-    width: 266px;
-    height: 167px;
-  }
-
-  .gym__icon {
-    scale: 0.7;
-  }
-
-  .coaches__slider-wrapper {
-    padding-left: 56px;
-    padding-right: 56px;
-  }
-
-  .coaches__button-wrapper {
-    left: -24px;
-    min-width: 107%;
-  }
-
-  .coaches__button--prev {
-    left: -2px;
-  }
-
-  .coaches__button--next {
-    right: 1px;
-  }
-
-  .coaches__title {
-    margin-bottom: 31px;
-    font-weight: 600;
-    font-size: 42px;
-    line-height: 50px;
-  }
-
-  .advantages__item {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
-  }
-
-  .advantages__item--desktop-only::before {
-    display: none;
-  }
-
-  .advantages__item--left {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
   }
 
   .sections-wrapper--form-contact {
@@ -4775,6 +4819,10 @@ button,
     display: none;
   }
 
+  .tabs {
+    width: 100%;
+  }
+
   .tabs__controls {
     margin-bottom: 34px;
     min-width: 290px;
@@ -4785,7 +4833,22 @@ button,
     line-height: 24px;
   }
 
+  .tabs__content {
+    width: 100%;
+  }
+
+  .tabs__subitem {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .tabs__item {
+    min-width: 290px;
+  }
+
   .tabs__content-wrapper {
+    width: 100%;
     padding-top: 44px;
     padding-bottom: 49px;
   }
@@ -4833,24 +4896,31 @@ button,
   }
 
   .promo__content-wrapper {
+    width: 100%;
     padding-bottom: 34px;
-    max-width: 290px;
-    -ms-grid-column-align: center;
-    justify-self: center;
+    min-width: 290px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .promo__time-wrapper {
+    top: 5px;
+    left: -11px;
   }
 
   .promo__text {
-    top: -6px;
+    top: -2px;
   }
 
   .promo__link {
-    margin-top: 33px;
+    margin-top: 36px;
     padding: 14px 41px;
   }
 
   .coaches {
     padding-top: 29px;
-    padding-bottom: 71px;
+    padding-bottom: 49px;
   }
 
   .coaches__slider-wrapper {
@@ -4879,19 +4949,31 @@ button,
   }
 
   .slider__wrapper {
-    max-width: 226px;
+    min-width: 226px;
+  }
+
+  .coaches-card__wrapper {
+    min-height: 294px;
+    max-height: 100%;
   }
 
   .coaches-card__img-wrapper img {
-    height: 274px;
+    min-width: 226px;
+    min-height: 274px;
+    max-height: 100%;
+    height: auto;
+    width: 100%;
   }
 
   .coaches-card__content {
     padding-top: 43px;
+    min-width: 268px;
+    max-width: 100%;
   }
 
   .coaches-card__list {
     padding: 123px 32px 48px 29px;
+    height: 100%;
   }
 
   .coaches-card__title {
@@ -4934,7 +5016,7 @@ button,
   }
 
   .advantages__item--center {
-    margin: 23px -15px 8px;
+    margin: 25px -15px 8px;
     padding: 33px 67px;
     padding-bottom: 27px;
     min-width: 100vw;
@@ -4957,6 +5039,11 @@ button,
     margin-top: -18px;
     margin-bottom: 3px;
     text-align: center;
+  }
+
+  .advantages__subtitle--center {
+    margin: 0;
+    margin-top: -12px;
   }
 
   .advantages__text {
@@ -4989,13 +5076,15 @@ button,
   }
 
   .stock__img-wrapper img {
-    width: 290px;
-    height: 299px;
+    min-width: 290px;
+    width: 100vw;
+    height: auto;
   }
 
   .stock__first-discount-content {
     padding: 34px 50px 45px;
-    max-width: 290px;
+    min-width: 290px;
+    width: 100%;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -5029,8 +5118,14 @@ button,
     padding-bottom: 70px;
   }
 
+  .reviews__wrapper {
+    -webkit-box-align: normal;
+    -ms-flex-align: normal;
+    align-items: normal;
+  }
+
   .reviews__swiper {
-    max-width: 226px;
+    max-width: 100%;
   }
 
   .reviews__title {
@@ -5051,7 +5146,7 @@ button,
   .reviews-card {
     padding: 38px 25px;
     padding-bottom: 36px;
-    max-width: 226px;
+    min-width: 226px;
     min-height: 335px;
     -ms-grid-columns: 68px 1fr;
     grid-template-columns: 68px 1fr;
@@ -5083,10 +5178,13 @@ button,
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     gap: 40px;
+    width: 100%;
   }
 
   .form-wrapper__title {
-    margin-left: -59px;
+    margin-left: 0;
+    -ms-flex-item-align: baseline;
+    align-self: baseline;
     font-size: 32px;
     line-height: 38px;
   }
@@ -5106,10 +5204,9 @@ button,
   .contacts {
     padding: 65px 15px;
     padding-bottom: 61px;
-  }
-
-  .contacts__wrapper {
-    justify-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
   }
 
   .contacts__title {
@@ -5153,12 +5250,7 @@ button,
     column-count: 2;
   }
 
-  .navigation__item:last-child {
-    margin-top: 21px;
-  }
-
   .navigation__item {
-    margin: 0;
     margin-top: 20px;
   }
 
@@ -5244,10 +5336,6 @@ button,
 
   .gym__text br {
     display: block;
-  }
-
-  .contacts__wrapper {
-    justify-items: start;
   }
 }
 

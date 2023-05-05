@@ -9,7 +9,7 @@
 
   @include vp-767 {
     padding-top: 29px;
-    padding-bottom: 71px;
+    padding-bottom: 49px;
   }
 
   &__wrapper {
@@ -27,7 +27,7 @@
 
     position: relative;
 
-    @include vp-1023 {
+    @media (max-width: 1199px) {
       padding-left: 56px;
       padding-right: 56px;
     }
@@ -60,7 +60,7 @@
       min-width: 103%;
     }
 
-    @include vp-1023 {
+    @media (max-width: 1199px) {
       left: -24px;
       min-width: 107%;
     }
@@ -86,7 +86,7 @@
         left: -34px;
       }
 
-      @include vp-1023 {
+      @media (max-width: 1199px) {
         left: -2px;
       }
     }
@@ -99,7 +99,7 @@
         right: -34px;
       }
 
-      @include vp-1023 {
+      @media (max-width: 1199px) {
         right: 1px;
       }
 
@@ -121,7 +121,7 @@
 
     letter-spacing: 0.03em;
 
-    @include vp-1023 {
+    @media (max-width: 1199px) {
       margin-bottom: 31px;
 
       font-weight: 600;

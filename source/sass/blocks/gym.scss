@@ -1,6 +1,6 @@
 .gym {
   padding-top: 120px;
-  padding-bottom: 189px;
+  padding-bottom: 233px;
 
   font-weight: 300;
   font-size: 16px;
@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
 
-  @include vp-1023 {
+  @media (max-width: 1199px) {
     padding-top: 100px;
     padding-bottom: 183px;
   }
@@ -23,7 +23,7 @@
     display: flex;
     justify-content: flex-end;
 
-    @include vp-1023 {
+    @media (max-width: 1199px) {
       flex-direction: column;
     }
   }
@@ -33,7 +33,7 @@
     margin-right: 85px;
     max-width: 355px;
 
-    @include vp-1023 {
+    @media (max-width: 1199px) {
       margin: 0;
       margin-bottom: 35px;
       max-width: 530px;
@@ -61,7 +61,7 @@
     line-height: 58px;
     letter-spacing: 0.03em;
 
-    @include vp-1023 {
+    @media (max-width: 1199px) {
       margin-bottom: 1px;
 
       font-size: 42px;
@@ -90,7 +90,7 @@
     font-size: 18px;
     line-height: 27px;
 
-    @include vp-1023 {
+    @media (max-width: 1199px) {
       margin-bottom: 33px;
     }
 
@@ -103,7 +103,7 @@
     margin: 0;
     margin-bottom: 9px;
 
-    @include vp-1023 {
+    @media (max-width: 1199px) {
       text-align: center;
     }
 
@@ -112,7 +112,7 @@
     }
 
     &--desktop-only {
-      @include vp-1023 {
+      @media (max-width: 1199px) {
         display: none;
       }
     }
@@ -136,12 +136,12 @@
 
   &__imge-wrapper {
     img {
-      @include vp-1023 {
+      @media (max-width: 1199px) {
         width: 100%;
       }
     }
 
-    @include vp-1023 {
+    @media (max-width: 1199px) {
       width: 100%;
     }
 
@@ -158,20 +158,16 @@
   &__video {
     position: absolute;
 
-    top: 71%;
+    top: 286px;
     left: -63px;
 
-    @include vp-1023 {
+    @media (max-width: 1199px) {
       width: 266px;
       min-height: 167px;
 
       top: 99%;
       left: 50%;
       transform: translate(-50%, -50%);
-    }
-
-    @include vp-767 {
-
     }
 
     @include vp-767 {
@@ -238,7 +234,7 @@
     width: 364px;
     height: 228px;
 
-    @include vp-1023 {
+    @media (max-width: 1199px) {
       width: 266px;
       height: 167px;
     }
@@ -276,7 +272,7 @@
   &__icon {
     transition: $trans-600;
 
-    @include vp-1023 {
+    @media (max-width: 1199px) {
       scale: 0.7;
     }
   }

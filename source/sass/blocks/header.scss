@@ -8,7 +8,7 @@
   background-color: transparent;
   color: $color-default-white;
 
-  @include vp-1023 {
+  @media (max-width: 1199px) {
     padding-top: 40px;
   }
 
@@ -20,6 +20,7 @@
   &__wrapper {
     display: flex;
     align-items: flex-start;
+    flex-wrap: wrap;
     justify-content: space-between;
 
     position: relative;
@@ -29,7 +30,7 @@
   &__logo {
     margin-top: 10px;
 
-    @include vp-1023 {
+    @media (max-width: 1199px) {
       margin: 0;
     }
 
@@ -51,7 +52,7 @@
 
     transition: $trans-600;
 
-    @include vp-1023 {
+    @media (max-width: 1199px) {
       position: relative;
       top: -6px;
 

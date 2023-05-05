@@ -27,13 +27,13 @@ const initCoachesGallery = () => {
         slidesPerView: 2,
         spaceBetween: 30,
       },
-      1023: {
+      1199: {
         slidesPerView: 4,
-        spaceBetween: 30,
-      },
-      1360: {
         spaceBetween: 40,
       },
+    },
+    a11y: {
+      id: 1,
     },
   });
   return coaches;

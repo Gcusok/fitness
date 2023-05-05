@@ -11,12 +11,14 @@
     padding: 62px 179px 62px 133px;
 
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   @include vp-767 {
     padding: 65px 15px;
     padding-bottom: 61px;
+
+    justify-content: flex-start;
   }
 
   &::before {
@@ -40,14 +42,6 @@
       display: grid;
       grid-template-columns: auto;
       align-items: center;
-    }
-
-    @include vp-767 {
-      justify-items: center;
-    }
-
-    @media (max-width: 320px) {
-      justify-items: start;
     }
   }
 

@@ -1,6 +1,5 @@
 .subscriptions {
-  padding: 120px 0;
-  padding-top: 164px;
+  padding: 121px 0 120px;
 
   position: relative;
   color: $color-sapphire;
@@ -52,7 +51,7 @@
     position: absolute;
     z-index: 1;
     right: -110px;
-    top: 68%;
+    top: 66%;
     rotate: 330deg;
 
     @media (max-width: 1224px) {
