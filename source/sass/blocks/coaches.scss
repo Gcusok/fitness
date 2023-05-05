@@ -2,7 +2,7 @@
   padding-top: 53px;
   padding-bottom: 140px;
 
-  @include vp-1023 {
+  @media (max-width: 1199px) {
     padding-top: 50px;
     padding-bottom: 100px;
   }
@@ -16,7 +16,7 @@
     display: flex;
     flex-direction: column;
 
-    @include vp-1023 {
+    @media (max-width: 1199px) {
       align-items: center;
     }
   }

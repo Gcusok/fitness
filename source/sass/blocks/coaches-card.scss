@@ -40,7 +40,7 @@
     img {
       width: 100%;
 
-      @include vp-1023 {
+      @media (max-width: 1199px) {
         width: 268px;
       }
 

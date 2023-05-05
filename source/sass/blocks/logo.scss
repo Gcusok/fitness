@@ -15,7 +15,7 @@
   }
 
   &--header {
-    @include vp-1023 {
+    @media (max-width: 1199px) {
       width: 82px;
       height: 17px;
     }
@@ -30,7 +30,7 @@
     width: 88px;
     height: 32px;
 
-    @include vp-1023 {
+    @media (max-width: 1199px) {
       width: 82px;
       height: 18px;
     }

@@ -7,8 +7,11 @@
     padding: 70px 50px 70px 50px;
   }
 
-  @include vp-1023 {
-    padding: 62px 179px 59px 133px;
+  @media (max-width: 1199px) {
+    padding: 62px 179px 62px 133px;
+
+    display: flex;
+    justify-content: center;
   }
 
   @include vp-767 {
@@ -27,13 +30,13 @@
 
     background-color: $color-light-slate-grey;
 
-    @include vp-1023 {
+    @media (max-width: 1199px) {
       display: none;
     }
   }
 
   &__wrapper {
-    @include vp-1023 {
+    @media (max-width: 1199px) {
       display: grid;
       grid-template-columns: auto;
       align-items: center;
@@ -57,7 +60,7 @@
     line-height: 65px;
     letter-spacing: 0.03em;
 
-    @include vp-1023 {
+    @media (max-width: 1199px) {
       margin-bottom: 32px;
 
       align-self: flex-start;
@@ -76,18 +79,16 @@
     padding-left: 5px;
 
     display: grid;
-    grid-template-columns: auto auto;
-    gap: 0 120px;
+    grid-template-columns: 170px auto;
+    gap: 0 104px;
 
     font-style: normal;
 
-    @media (max-width: 1361px) {
-      gap: 0 30px;
-    }
+    @media (max-width: 1199px) {
 
-    @include vp-1023 {
+      grid-template-columns: 218px auto;
       padding: 0;
-      gap: 0 69px;
+      gap: 0 82px;
     }
 
     @include vp-767 {
@@ -103,21 +104,17 @@
 
     &:first-child::after {
       width: 1px;
-      height: 100%;
+      height: 91%;
 
       content: "";
       position: absolute;
-      top: 0;
-      right: -36%;
+      top: 5px;
+      right: -35%;
 
       background-color: $color-light-slate-grey;
 
-      @media (max-width: 1361px) {
-        right: 8%;
-      }
-
-      @include vp-1023 {
-        right: -16%;
+      @media (max-width: 1199px) {
+        right: -22%;
       }
 
       @include vp-767 {
@@ -140,11 +137,15 @@
     font-weight: 700;
     line-height: 24px;
 
-    @include vp-1023 {
+    @media (max-width: 1199px) {
       margin-bottom: 5px;
 
       font-size: 20px;
       line-height: 30px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 7px;
     }
   }
 
@@ -154,8 +155,8 @@
     font-size: 14px;
     line-height: 21px;
 
-    @include vp-1023 {
-      margin: 0 0 23px;
+    @media (max-width: 1199px) {
+      margin: 0 0 19px;
 
       font-size: 18px;
       line-height: 27px;

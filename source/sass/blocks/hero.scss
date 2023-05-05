@@ -17,7 +17,7 @@
 
     background: $bg-red-to-blue;
 
-    @include vp-1023 {
+    @media (max-width: 1199px) {
       background: $bg-red-to-blue-tablet;
     }
 
@@ -26,7 +26,7 @@
     }
   }
 
-  @include vp-1023 {
+  @media (max-width: 1199px) {
     padding-top: 61px;
     padding-bottom: 109px;
   }
@@ -43,7 +43,7 @@
     grid-template-columns: 396px auto;
     gap: 0 64px;
 
-    @include vp-1023 {
+    @media (max-width: 1199px) {
       grid-template-columns: 324px auto;
 
       gap: 30px;
@@ -58,7 +58,7 @@
       top: -111px;
       right: 199px;
 
-      @include vp-1023 {
+      @media (max-width: 1199px) {
         max-width: 324px;
 
         top: -49px;
@@ -103,7 +103,7 @@
 
     text-transform: uppercase;
 
-    @include vp-1023 {
+    @media (max-width: 1199px) {
       font-weight: 600;
 
       font-size: 72px;
@@ -133,7 +133,7 @@
     align-items: center;
     letter-spacing: 0.03em;
 
-    @include vp-1023 {
+    @media (max-width: 1199px) {
       margin: 0;
       margin-bottom: 7px;
 
@@ -169,7 +169,7 @@
     right: -19px;
     top: -6px;
 
-    @include vp-1023 {
+    @media (max-width: 1199px) {
       margin-top: auto;
       margin-bottom: 38px;
 
@@ -234,7 +234,7 @@
       box-shadow: 0 3px 6px 0 $color-default-black inset, inset -3px 0 6px $color-default-black, inset 2px 0 6px $color-default-black, inset 0 -3px 6px $color-default-black;
     }
 
-    @include vp-1023 {
+    @media (max-width: 1199px) {
       margin-top: 22px;
       padding: 20px 32px;
 

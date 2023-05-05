@@ -2,7 +2,7 @@
   padding-top: 57px;
   padding-bottom: 120px;
 
-  @include vp-1023 {
+  @media (max-width: 1199px) {
     padding-top: 34px;
     padding-bottom: 100px;
   }
@@ -23,7 +23,7 @@
   &__swiper {
     max-width: 560px;
 
-    @include vp-1023 {
+    @media (max-width: 1199px) {
       max-width: 566px;
     }
 
@@ -47,7 +47,7 @@
     text-align: center;
     letter-spacing: 0.03em;
 
-    @include vp-1023 {
+    @media (max-width: 1199px) {
       margin-bottom: 40px;
 
       font-size: 42px;
@@ -61,7 +61,7 @@
   }
 
   &__slider-wrapper-content {
-    @include vp-1023 {
+    @media (max-width: 1199px) {
       padding-left: 53px;
       padding-right: 53px;
 
@@ -86,7 +86,7 @@
     &--prev {
       left: 20%;
 
-      @include vp-1023 {
+      @media (max-width: 1199px) {
         left: 0;
         top: 44%;
       }
@@ -96,7 +96,7 @@
       right: 20%;
       rotate: 180deg;
 
-      @include vp-1023 {
+      @media (max-width: 1199px) {
         right: 0%;
         top: 43%;
       }

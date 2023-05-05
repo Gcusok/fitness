@@ -4,7 +4,7 @@
 
   background-color: $color-ghost-white;
 
-  @include vp-1023 {
+  @media (max-width: 1199px) {
     padding-top: 95px;
     padding-bottom: 70px;
   }
@@ -34,7 +34,7 @@
 
     align-self: center;
 
-    @include vp-1023 {
+    @media (max-width: 1199px) {
       position: relative;
       left: -12px;
 
@@ -54,7 +54,7 @@
   &__list-wrapper {
     padding: 0 80px;
 
-    @include vp-1023 {
+    @media (max-width: 1199px) {
       padding: 0;
     }
   }
@@ -70,7 +70,7 @@
     grid-auto-flow: dense;
     gap: 107px 8px;
 
-    @include vp-1023 {
+    @media (max-width: 1199px) {
       width: 100%;
       gap: 22px 30px;
       grid-template-columns: repeat(2, 1fr);
@@ -155,7 +155,7 @@
       color: $color-default-white;
       background-color: $color-resolution-blue;
 
-      @include vp-1023 {
+      @media (max-width: 1199px) {
         margin: 0 auto;
         margin-bottom: 8px;
         padding: 0 135px;
@@ -180,7 +180,7 @@
       position: relative;
       right: -9px;
 
-      @include vp-1023 {
+      @media (max-width: 1199px) {
         right: 0;
       }
     }
@@ -191,7 +191,7 @@
       position: relative;
       left: 3px;
 
-      @include vp-1023 {
+      @media (max-width: 1199px) {
         left: 0;
       }
     }
@@ -208,7 +208,7 @@
 
     max-width: 330px;
 
-    @include vp-1023 {
+    @media (max-width: 1199px) {
       grid-template-columns: 1fr 1fr;
       gap: 20px 60px;
 
@@ -240,7 +240,7 @@
     background-image: $advantages-red-to-blue;
     background-clip: text;
 
-    @include vp-1023 {
+    @media (max-width: 1199px) {
       font-size: 58px;
       line-height: 87px;
     }
@@ -258,7 +258,7 @@
 
       color: $color-default-white;
 
-      @include vp-1023 {
+      @media (max-width: 1199px) {
         margin-bottom: -7px;
 
         font-size: 74px;
@@ -294,7 +294,7 @@
     font-size: 22px;
     line-height: 33px;
 
-    @include vp-1023 {
+    @media (max-width: 1199px) {
       margin-top: 13px;
       margin-bottom: 2px;
 
@@ -316,7 +316,7 @@
       font-size: 26px;
       line-height: 39px;
 
-      @include vp-1023 {
+      @media (max-width: 1199px) {
         margin: 0;
         margin-bottom: 13px;
 
@@ -338,7 +338,7 @@
     &--center {
       text-align: center;
 
-      @include vp-1023 {
+      @media (max-width: 1199px) {
         line-height: 24px;
       }
 

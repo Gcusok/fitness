@@ -4,7 +4,7 @@
 
   background-color: $color-black-russian;
 
-  @include vp-1023 {
+  @media (max-width: 1199px) {
     padding: 45px 0;
     padding-bottom: 38px;
   }
@@ -24,7 +24,7 @@
   &__logo {
     margin-top: 10px;
 
-    @include vp-1023 {
+    @media (max-width: 1199px) {
       margin-top: 4px;
       margin-right: 16px;
     }

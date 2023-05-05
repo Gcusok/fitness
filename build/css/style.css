@@ -2667,8 +2667,8 @@ button,
   padding: 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (360px)[3];
-  grid-template-columns: repeat(3, 360px);
+  -ms-grid-columns: (auto)[3];
+  grid-template-columns: repeat(3, auto);
   gap: 40px;
 }
 
@@ -3804,9 +3804,9 @@ button,
   padding-left: 5px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto auto;
-  grid-template-columns: auto auto;
-  gap: 0 120px;
+  -ms-grid-columns: 170px auto;
+  grid-template-columns: 170px auto;
+  gap: 0 104px;
   font-style: normal;
 }
 
@@ -3817,11 +3817,11 @@ button,
 
 .contacts__list:first-child::after {
   width: 1px;
-  height: 100%;
+  height: 91%;
   content: "";
   position: absolute;
-  top: 0;
-  right: -36%;
+  top: 5px;
+  right: -35%;
   background-color: #74819c;
 }
 
@@ -3988,16 +3988,6 @@ button,
   }
 */
 
-@media (max-width: 1361px) {
-  .contacts__content {
-    gap: 0 30px;
-  }
-
-  .contacts__list:first-child::after {
-    right: 8%;
-  }
-}
-
 @media (max-width: 1360px) {
   .container {
     padding: 0 45px;
@@ -4038,55 +4028,6 @@ button,
   }
 }
 
-@media (max-width: 1243px) {
-  .promo__wrapper {
-    -ms-grid-columns: 292px 386px;
-    grid-template-columns: 292px 386px;
-  }
-
-  .promo__content-wrapper {
-    -ms-grid-columns: 117px auto;
-    grid-template-columns: 117px auto;
-    padding: 51px 45px;
-    padding-bottom: 38px;
-    gap: 5px 29px;
-  }
-
-  .promo__title {
-    font-size: 48px;
-    line-height: 46px;
-  }
-
-  .promo__time-title {
-    font-size: 12px;
-    line-height: 18px;
-  }
-
-  .promo__time-discription {
-    font-size: 24px;
-    line-height: 36px;
-  }
-
-  .promo__data {
-    margin-left: 3px;
-    font-size: 10px;
-    line-height: 15px;
-  }
-
-  .promo__text {
-    font-size: 12px;
-    line-height: 18px;
-  }
-
-  .promo__link {
-    margin-top: 20px;
-    padding: 16px 42px;
-    font-size: 10px;
-    line-height: 12px;
-    border: 2px solid #ffffff;
-  }
-}
-
 @media (max-width: 1224px) {
   .subscriptions__background-wrapper {
     right: -23px;
@@ -4094,42 +4035,9 @@ button,
     scale: 1.3;
     rotate: 1deg;
   }
-
-  .tabs__subitem {
-    -ms-grid-columns: 442px;
-    grid-template-columns: 442px;
-  }
 }
 
-@media (max-width: 1024px) {
-  .coaches__button-wrapper {
-    left: -24px;
-    min-width: 103%;
-  }
-}
-
-@media (max-width: 1023px) {
-  .container {
-    padding: 0 45px;
-  }
-
-  .header {
-    padding-top: 40px;
-  }
-
-  .header__logo {
-    margin: 0;
-  }
-
-  .header__link {
-    position: relative;
-    top: -6px;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-    letter-spacing: 0.02em;
-  }
-
+@media (max-width: 1199px) {
   .logo--header {
     width: 82px;
     height: 17px;
@@ -4191,84 +4099,6 @@ button,
     max-height: 57px;
   }
 
-  .gym {
-    padding-top: 100px;
-    padding-bottom: 183px;
-  }
-
-  .gym__wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  .gym__content {
-    margin: 0;
-    margin-bottom: 35px;
-    max-width: 530px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
-  }
-
-  .gym__title {
-    margin-bottom: 1px;
-    font-size: 42px;
-    line-height: 50px;
-    position: relative;
-    left: -8px;
-  }
-
-  .gym__subtitle {
-    margin-bottom: 33px;
-  }
-
-  .gym__text {
-    text-align: center;
-  }
-
-  .gym__text--desktop-only {
-    display: none;
-  }
-
-  .gym__imge-wrapper img {
-    width: 100%;
-  }
-
-  .gym__imge-wrapper {
-    width: 100%;
-  }
-
-  .gym__video {
-    width: 266px;
-    height: 167px;
-    top: 99%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
-
-  .gym__iframe {
-    width: 266px;
-    height: 167px;
-  }
-
-  .gym__icon {
-    scale: 0.7;
-  }
-
   .subscriptions {
     padding: 100px 0;
     padding-bottom: 105px;
@@ -4290,6 +4120,12 @@ button,
   .tabs__control {
     font-size: 18px;
     line-height: 27px;
+  }
+
+  .tabs__subitem {
+    -ms-grid-columns: 290px;
+    grid-template-columns: 290px;
+    gap: 35px;
   }
 
   .tabs__content-wrapper {
@@ -4342,31 +4178,6 @@ button,
     align-items: center;
   }
 
-  .coaches__slider-wrapper {
-    padding-left: 56px;
-    padding-right: 56px;
-  }
-
-  .coaches__button-wrapper {
-    left: -24px;
-    min-width: 107%;
-  }
-
-  .coaches__button--prev {
-    left: -2px;
-  }
-
-  .coaches__button--next {
-    right: 1px;
-  }
-
-  .coaches__title {
-    margin-bottom: 31px;
-    font-weight: 600;
-    font-size: 42px;
-    line-height: 50px;
-  }
-
   .slider__wrapper {
     max-width: 576px;
   }
@@ -4396,22 +4207,6 @@ button,
     gap: 22px 30px;
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .advantages__item {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
-  }
-
-  .advantages__item--desktop-only::before {
-    display: none;
-  }
-
-  .advantages__item--left {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
   }
 
   .advantages__item--center {
@@ -4546,11 +4341,6 @@ button,
     gap: 12px 31px;
   }
 
-  .sections-wrapper--form-contact {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-  }
-
   .form-wrapper {
     padding: 61px 163px 67px 133px;
     -webkit-box-align: center;
@@ -4566,8 +4356,10 @@ button,
 
   .form-wrapper__title {
     margin-bottom: 40px;
-    -ms-flex-item-align: start;
-    align-self: flex-start;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    margin-left: -172px;
     font-weight: 700;
     font-size: 42px;
     line-height: 50px;
@@ -4578,7 +4370,13 @@ button,
   }
 
   .contacts {
-    padding: 62px 179px 59px 133px;
+    padding: 62px 179px 62px 133px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .contacts::before {
@@ -4604,12 +4402,14 @@ button,
   }
 
   .contacts__content {
+    -ms-grid-columns: 218px auto;
+    grid-template-columns: 218px auto;
     padding: 0;
-    gap: 0 69px;
+    gap: 0 82px;
   }
 
   .contacts__list:first-child::after {
-    right: -16%;
+    right: -22%;
   }
 
   .contacts__subtitle {
@@ -4619,7 +4419,7 @@ button,
   }
 
   .contacts__text {
-    margin: 0 0 23px;
+    margin: 0 0 19px;
     font-size: 18px;
     line-height: 27px;
   }
@@ -4640,6 +4440,160 @@ button,
 
   .navigation__item {
     margin-right: 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .coaches__button-wrapper {
+    left: -24px;
+    min-width: 103%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .container {
+    padding: 0 45px;
+  }
+
+  .header {
+    padding-top: 40px;
+  }
+
+  .header__logo {
+    margin: 0;
+  }
+
+  .header__link {
+    position: relative;
+    top: -6px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+  }
+
+  .gym {
+    padding-top: 100px;
+    padding-bottom: 183px;
+  }
+
+  .gym__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .gym__content {
+    margin: 0;
+    margin-bottom: 35px;
+    max-width: 530px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+  }
+
+  .gym__title {
+    margin-bottom: 1px;
+    font-size: 42px;
+    line-height: 50px;
+    position: relative;
+    left: -8px;
+  }
+
+  .gym__subtitle {
+    margin-bottom: 33px;
+  }
+
+  .gym__text {
+    text-align: center;
+  }
+
+  .gym__text--desktop-only {
+    display: none;
+  }
+
+  .gym__imge-wrapper img {
+    width: 100%;
+  }
+
+  .gym__imge-wrapper {
+    width: 100%;
+  }
+
+  .gym__video {
+    width: 266px;
+    min-height: 167px;
+    top: 99%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .gym__iframe {
+    width: 266px;
+    height: 167px;
+  }
+
+  .gym__icon {
+    scale: 0.7;
+  }
+
+  .coaches__slider-wrapper {
+    padding-left: 56px;
+    padding-right: 56px;
+  }
+
+  .coaches__button-wrapper {
+    left: -24px;
+    min-width: 107%;
+  }
+
+  .coaches__button--prev {
+    left: -2px;
+  }
+
+  .coaches__button--next {
+    right: 1px;
+  }
+
+  .coaches__title {
+    margin-bottom: 31px;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  .advantages__item {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+
+  .advantages__item--desktop-only::before {
+    display: none;
+  }
+
+  .advantages__item--left {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+
+  .sections-wrapper--form-contact {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -4794,6 +4748,10 @@ button,
     transform: translate(0, 0);
   }
 
+  .gym__video--link::after {
+    min-height: 167px;
+  }
+
   .gym__video--link img {
     width: 100%;
   }
@@ -4825,12 +4783,6 @@ button,
   .tabs__control {
     font-size: 16px;
     line-height: 24px;
-  }
-
-  .tabs__subitem {
-    -ms-grid-columns: 290px;
-    grid-template-columns: 290px;
-    gap: 35px;
   }
 
   .tabs__content-wrapper {
@@ -5021,6 +4973,10 @@ button,
     padding-bottom: 35px;
   }
 
+  .stock__content-wrapper {
+    gap: 28px;
+  }
+
   .stock__title {
     font-size: 32px;
     line-height: 38px;
@@ -5130,6 +5086,7 @@ button,
   }
 
   .form-wrapper__title {
+    margin-left: -59px;
     font-size: 32px;
     line-height: 38px;
   }
@@ -5140,6 +5097,7 @@ button,
   }
 
   .form-wrapper__submit {
+    margin-top: -2px;
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
@@ -5171,6 +5129,10 @@ button,
 
   .contacts__list:last-child {
     left: 0;
+  }
+
+  .contacts__subtitle {
+    margin-bottom: 7px;
   }
 
   .footer {
