@@ -17,8 +17,6 @@
     flex-direction: column;
     align-items: center;
 
-    position: relative;
-
     @include vp-767 {
       align-items: normal;
     }
@@ -70,11 +68,11 @@
   }
 
   &__slider-wrapper-content {
+    position: relative;
+
     @media (max-width: 1199px) {
       padding-left: 53px;
       padding-right: 53px;
-
-      position: relative;
     }
 
     @include vp-767 {
@@ -84,29 +82,28 @@
   }
 
   &__button {
-    top: 60%;
+    top: 50%;
 
     @include vp-767 {
       scale: 0.75;
-      top: 45%;
     }
 
     &--prev {
-      left: 21%;
+      left: -10%;
+      transform: translateY(-50%);
 
       @media (max-width: 1199px) {
         left: 0;
-        top: 44%;
       }
     }
 
     &--next {
-      right: 21%;
-      rotate: 180deg;
+      right: -10%;
+
+      transform: translateY(-50%) rotate(180deg);
 
       @media (max-width: 1199px) {
         right: 0%;
-        top: 43%;
       }
     }
   }

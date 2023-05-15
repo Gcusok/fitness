@@ -42,7 +42,6 @@
   }
 
   &__link {
-    margin-left: 10px;
 
     font-family: $ff-alumni;
     font-weight: 600;
@@ -83,5 +82,9 @@
     &:active {
       opacity: 0.7;
     }
+  }
+
+  &__link + &__link {
+    margin-left: auto;
   }
 }

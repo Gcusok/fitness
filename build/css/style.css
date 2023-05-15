@@ -2191,7 +2191,6 @@ button,
 }
 
 .header__link {
-  margin-left: 10px;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
   font-size: 26px;
@@ -2215,6 +2214,10 @@ button,
 
 .header__link:active {
   opacity: 0.7;
+}
+
+.header__link + .header__link {
+  margin-left: auto;
 }
 
 .logo {
@@ -3573,7 +3576,6 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: relative;
 }
 
 .reviews__swiper {
@@ -3605,17 +3607,26 @@ button,
   letter-spacing: 0.03em;
 }
 
+.reviews__slider-wrapper-content {
+  position: relative;
+}
+
 .reviews__button {
-  top: 60%;
+  top: 50%;
 }
 
 .reviews__button--prev {
-  left: 21%;
+  left: -10%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .reviews__button--next {
-  right: 21%;
-  rotate: 180deg;
+  right: -10%;
+  -webkit-transform: translateY(-50%) rotate(180deg);
+  -ms-transform: translateY(-50%) rotate(180deg);
+  transform: translateY(-50%) rotate(180deg);
 }
 
 .reviews-card {
@@ -4536,17 +4547,14 @@ button,
   .reviews__slider-wrapper-content {
     padding-left: 53px;
     padding-right: 53px;
-    position: relative;
   }
 
   .reviews__button--prev {
     left: 0;
-    top: 44%;
   }
 
   .reviews__button--next {
     right: 0%;
-    top: 43%;
   }
 
   .reviews-card {
@@ -5178,7 +5186,6 @@ button,
 
   .reviews__button {
     scale: 0.75;
-    top: 45%;
   }
 
   .reviews-card {
