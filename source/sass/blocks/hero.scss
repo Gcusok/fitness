@@ -181,11 +181,7 @@
       max-width: 113px;
       max-height: 51px;
       position: relative;
-    }
-
-    @media (max-width: $vp-320) {
       min-width: 113px;
-
       top: -23px;
       right: -8px;
     }

@@ -21,7 +21,6 @@
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
-    justify-content: space-between;
 
     position: relative;
     z-index: 2;
@@ -29,9 +28,11 @@
 
   &__logo {
     margin-top: 10px;
+    margin-right: auto;
 
     @media (max-width: 1199px) {
       margin: 0;
+      margin-right: auto;
     }
 
     @include vp-767 {
@@ -41,6 +42,8 @@
   }
 
   &__link {
+    margin-left: 10px;
+
     font-family: $ff-alumni;
     font-weight: 600;
     font-size: 26px;

@@ -34,6 +34,7 @@
     font-family: $ff-alumni;
     font-size: 54px;
     line-height: 65px;
+    font-weight: 600;
     text-align: center;
 
     @media (max-width: 1199px) {
@@ -152,11 +153,9 @@
       }
     }
 
-    br {
-      display: none;
-
+    &--free {
       @media (max-width: 1199px) {
-        display: block;
+        max-width: 156px;
       }
     }
   }

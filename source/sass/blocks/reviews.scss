@@ -37,7 +37,12 @@
   }
 
   &__slider-wrapper {
-    box-shadow: $color-reviews-card-shadow;
+    display: flex;
+    align-items: center;
+  }
+
+  &__slide {
+    box-shadow: 0px 0px 40px $color-reviews-card-shadow;
   }
 
   &__title {
@@ -79,8 +84,7 @@
   }
 
   &__button {
-    top: 62%;
-
+    top: 60%;
 
     @include vp-767 {
       scale: 0.75;
@@ -88,7 +92,7 @@
     }
 
     &--prev {
-      left: 20%;
+      left: 21%;
 
       @media (max-width: 1199px) {
         left: 0;
@@ -97,7 +101,7 @@
     }
 
     &--next {
-      right: 20%;
+      right: 21%;
       rotate: 180deg;
 
       @media (max-width: 1199px) {
